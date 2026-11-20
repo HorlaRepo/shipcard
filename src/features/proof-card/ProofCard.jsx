@@ -44,6 +44,7 @@ export default function ProofCard({ profile, productName, content }) {
 
   return (
     <CardFrame
+      isArriving
       productName={productName}
       kind={
         profile.snapshotDateLabel

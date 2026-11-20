@@ -32,6 +32,29 @@
   color: var(--color-ink-muted);
 }
 
+/* The one scroll reveal on the page: the steps arrive in order, once.
+   Without motion permission they are simply there. */
+@media (prefers-reduced-motion: no-preference) {
+  .step {
+    transition:
+      opacity var(--duration-slow) var(--ease-out),
+      transform var(--duration-slow) var(--ease-out);
+  }
+
+  .step:nth-child(2) {
+    transition-delay: var(--stagger-step);
+  }
+
+  .step:nth-child(3) {
+    transition-delay: calc(2 * var(--stagger-step));
+  }
+
+  .steps[data-revealed='false'] .step {
+    opacity: 0;
+    transform: translateY(var(--reveal-distance));
+  }
+}
+
 @media (--from-sm) {
   .steps {
     grid-template-columns: repeat(3, minmax(0, 1fr));
