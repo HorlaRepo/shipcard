@@ -268,6 +268,21 @@ export const waitlist = {
   id: sectionIds.waitlist,
   title: 'Be first to carry a Pro card',
   lead: 'Leave your email address and we will write once, when paid plans open. No newsletter.',
+  form: {
+    label: 'Email address',
+    hint: 'We store this address and nothing else.',
+    submit: 'Join the waitlist',
+    submitting: 'Joining',
+    honeypotLabel: 'Leave this field empty',
+    success: 'You are on the list. We will write to {email} once, when paid plans open.',
+    problems: {
+      empty: 'Enter your email address.',
+      invalid: 'That does not look like an email address. Check for a missing @ or domain.',
+      rejected: 'The waitlist did not accept that address. Check it and try again.',
+      network: 'We could not reach the waitlist. Check your connection, then try again.',
+      server: 'The waitlist is not answering just now. Try again in a minute.',
+    },
+  },
 };
 
 export const footer = {
