@@ -19,6 +19,7 @@ Accepted decisions are reopened only with new evidence. A replaced decision is m
 | [0006](0006-unauthenticated-github-rest-api.md) | GitHub REST API, unauthenticated, two requests per lookup | Accepted |
 | [0007](0007-motion-with-css-and-intersection-observer.md) | Motion with CSS transitions and IntersectionObserver | Accepted |
 | [0008](0008-waitlist-submits-to-a-form-provider.md) | Waitlist submits to a hosted form provider behind `submitWaitlist()` | Accepted |
+| [0009](0009-vitest-testing-library-and-msw.md) | Vitest, React Testing Library and MSW | Accepted |
 
 ## Decision log
 
