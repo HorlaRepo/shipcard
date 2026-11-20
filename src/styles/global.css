@@ -53,6 +53,16 @@ input {
   caret-color: var(--color-ink);
 }
 
+/* Controls answer a tap at once (no double-tap-zoom delay), and the press
+   states in each component replace the browser's grey tap flash. */
+a,
+button,
+input,
+label {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;

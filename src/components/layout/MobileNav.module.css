@@ -21,6 +21,7 @@
   inset: 0;
   z-index: var(--layer-dialog);
   overflow-y: auto;
+  overscroll-behavior: contain;
   background-color: var(--color-ground);
   transition:
     opacity var(--duration-base) var(--ease-out),

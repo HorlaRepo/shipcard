@@ -15,7 +15,7 @@ export default function CardFrame({ productName, kind, isArriving = false, child
   return (
     <div className={isArriving ? `${styles.frame} ${styles.arriving}` : styles.frame}>
       <p className={styles.strip}>
-        <span>{productName}</span>
+        <span translate="no">{productName}</span>
         <span>{kind}</span>
       </p>
       <div className={styles.body}>{children}</div>
