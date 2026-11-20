@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://shipcard.fran64biz.workers.dev/sitemap.xml

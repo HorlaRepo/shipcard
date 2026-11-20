@@ -1,0 +1,191 @@
+<!doctype html>
+<!--
+  Source of public/og-image.png (1200 x 630). Open this file in a browser at
+  that window size and take a screenshot to regenerate the image. It uses the
+  page's own fonts and token values, and shows the card's empty state.
+-->
+<html lang="en">
+  <head>
+    <title>Shipcard social image</title>
+    <meta charset="utf-8" />
+    <style>
+      @font-face {
+        font-family: Archivo;
+        src: url('../public/fonts/archivo-variable.woff2');
+        font-weight: 400 800;
+        font-stretch: 62% 100%;
+      }
+      @font-face {
+        font-family: Plex;
+        src: url('../public/fonts/ibm-plex-mono-500.woff2');
+        font-weight: 500;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      body {
+        width: 1200px;
+        height: 630px;
+        background: #edeae3;
+        color: #15140f;
+        font-family: Archivo;
+        display: grid;
+        grid-template-columns: 1fr 330px;
+        gap: 56px;
+        padding: 64px 72px;
+        align-items: center;
+      }
+      .w {
+        font: 800 30px/1 Archivo;
+        font-stretch: 62%;
+        text-transform: uppercase;
+        margin-bottom: 36px;
+      }
+      h1 {
+        font: 800 94px/0.92 Archivo;
+        font-stretch: 62%;
+        text-transform: uppercase;
+      }
+      mark {
+        background: #ffd500;
+        color: #15140f;
+        padding: 0 0.12em;
+        border-radius: 2px;
+      }
+      p {
+        font: 400 26px/1.4 Archivo;
+        margin-top: 30px;
+        max-width: 640px;
+      }
+      .card {
+        background: #fff;
+        border-radius: 4px;
+        height: 470px;
+        box-shadow:
+          0 1px 2px rgb(21 20 15/0.08),
+          0 16px 32px -12px rgb(21 20 15/0.28);
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+      }
+      .strip {
+        display: flex;
+        justify-content: space-between;
+        padding: 14px 22px;
+        border-bottom: 2px solid #15140f;
+        font: 500 13px/1.15 Plex;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+      .id {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        padding: 18px 22px;
+      }
+      .av {
+        width: 60px;
+        height: 60px;
+        background: #edeae3;
+        border-radius: 2px;
+      }
+      .l {
+        height: 14px;
+        background: #edeae3;
+        border-radius: 2px;
+        width: 150px;
+      }
+      .l.s {
+        width: 90px;
+        margin-top: 10px;
+      }
+      .f {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        border-block: 1px solid #c9c5ba;
+      }
+      .f div {
+        padding: 12px 12px 14px 22px;
+        border-left: 1px solid #c9c5ba;
+      }
+      .f div:first-child {
+        border-left: 0;
+      }
+      .c {
+        font: 500 12px/1.15 Plex;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #55524a;
+      }
+      .v {
+        height: 30px;
+        border-bottom: 1px solid #c9c5ba;
+      }
+      .b {
+        padding: 16px 22px;
+        border-bottom: 1px solid #c9c5ba;
+        flex: 1;
+      }
+      .b .v {
+        height: 24px;
+      }
+      .ft {
+        padding: 16px 22px;
+      }
+      .bc {
+        height: 40px;
+        margin-top: 12px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="w">Shipcard</div>
+      <h1>Your résumé says what you know. Your code <mark>proves it.</mark></h1>
+      <p>Type a GitHub username. Get a proof-of-work card built from live public data.</p>
+    </div>
+    <div class="card">
+      <div class="strip"><span>Shipcard</span><span>Proof of work</span></div>
+      <div class="id">
+        <div class="av"></div>
+        <div>
+          <div class="l"></div>
+          <div class="l s"></div>
+        </div>
+      </div>
+      <div class="f">
+        <div>
+          <div class="c">Repos</div>
+          <div class="v"></div>
+        </div>
+        <div>
+          <div class="c">Stars</div>
+          <div class="v"></div>
+        </div>
+        <div>
+          <div class="c">Age</div>
+          <div class="v"></div>
+        </div>
+      </div>
+      <div class="b">
+        <div class="c">Top languages</div>
+        <div class="v"></div>
+      </div>
+      <div class="b">
+        <div class="c">Most starred</div>
+        <div class="v"></div>
+      </div>
+      <div class="ft">
+        <div class="c">Last shipped</div>
+        <svg class="bc" viewBox="0 0 127 1" preserveAspectRatio="none">
+          <path
+            fill="#15140f"
+            d="M0 0h1v1h-1zM4 0h1v1h-1zM6 0h3v1h-3zM10 0h3v1h-3zM14 0h1v1h-1zM16 0h1v1h-1zM18 0h1v1h-1zM22 0h1v1h-1zM24 0h3v1h-3zM28 0h3v1h-3zM32 0h1v1h-1zM36 0h1v1h-1zM38 0h1v1h-1zM40 0h3v1h-3zM46 0h1v1h-1zM48 0h3v1h-3zM54 0h1v1h-1zM56 0h1v1h-1zM58 0h3v1h-3zM62 0h1v1h-1zM64 0h1v1h-1zM66 0h3v1h-3zM72 0h1v1h-1zM74 0h1v1h-1zM76 0h3v1h-3zM80 0h3v1h-3zM86 0h1v1h-1zM88 0h1v1h-1zM90 0h1v1h-1zM92 0h3v1h-3zM96 0h1v1h-1zM100 0h1v1h-1zM102 0h3v1h-3zM106 0h3v1h-3zM110 0h1v1h-1zM112 0h1v1h-1zM116 0h1v1h-1zM118 0h3v1h-3zM122 0h3v1h-3zM126 0h1v1h-1z"
+          />
+        </svg>
+      </div>
+    </div>
+  </body>
+</html>
