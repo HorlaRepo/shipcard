@@ -14,6 +14,7 @@ Accepted decisions are reopened only with new evidence. A replaced decision is m
 | [0001](0001-record-decisions-as-adrs-and-a-log.md) | Record decisions as ADRs plus a decision log | Accepted |
 | [0002](0002-vite-and-react.md) | Vite and React, on Node LTS, with versions pinned by the lockfile | Accepted |
 | [0003](0003-javascript-with-jsdoc-types.md) | JavaScript with JSDoc types, checked by `tsc --noEmit` | Accepted |
+| [0004](0004-css-modules-and-design-tokens.md) | CSS Modules with design tokens as CSS custom properties | Accepted |
 
 ## Decision log
 
