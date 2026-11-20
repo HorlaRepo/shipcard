@@ -18,6 +18,7 @@ Accepted decisions are reopened only with new evidence. A replaced decision is m
 | [0005](0005-state-reducer-context-and-url.md) | State: a reducer for the demo, context for the theme, the URL for the username | Accepted |
 | [0006](0006-unauthenticated-github-rest-api.md) | GitHub REST API, unauthenticated, two requests per lookup | Accepted |
 | [0007](0007-motion-with-css-and-intersection-observer.md) | Motion with CSS transitions and IntersectionObserver | Accepted |
+| [0008](0008-waitlist-submits-to-a-form-provider.md) | Waitlist submits to a hosted form provider behind `submitWaitlist()` | Accepted |
 
 ## Decision log
 
