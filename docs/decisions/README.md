@@ -29,3 +29,5 @@ Accepted decisions are reopened only with new evidence. A replaced decision is m
 
 | # | Date | Decision | Why | Alternatives rejected |
 | --- | --- | --- | --- | --- |
+| L-01 | 2026-11-20 | Use Impeccable's reference files directly; do not run its `scripts/impeccable` launcher | The launcher downloads and executes a prebuilt binary on first run. The skill documents a launcher-free path, and the guidance itself is in Markdown | Running the launcher (unreviewed binary with full local permissions, for context loading that reading two files replaces) |
+| L-02 | 2026-11-20 | Install skills with `--copy` for one agent directory (`.claude/skills/`) | Real files travel with the repository and show up in review; the lockfile pins each to a commit and hash | Symlinks into `.agents/skills/` (two directories for one set of files); global install (does not travel with the repo, against the brief) |
