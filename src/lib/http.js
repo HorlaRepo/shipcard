@@ -60,23 +60,27 @@ export function isAbortError(error) {
 }
 
 /**
- * GETs a URL and parses the JSON body.
+ * @typedef {object} RequestOptions
+ * @property {AbortSignal} [signal] Cancels the request; the promise rejects with an AbortError.
+ * @property {number} [timeoutMs]
+ * @property {Record<string, string>} [headers]
+ */
+
+/**
+ * Sends a request and parses the JSON body of the answer.
  *
  * @param {string} url
- * @param {object} [options]
- * @param {AbortSignal} [options.signal] Cancels the request; the promise rejects with an AbortError.
- * @param {number} [options.timeoutMs]
- * @param {Record<string, string>} [options.headers]
+ * @param {RequestInit} init Method, headers and body.
+ * @param {RequestOptions} options
  * @returns {Promise<{ data: unknown, headers: Headers }>}
- * @throws {HttpStatusError | HttpTimeoutError | HttpNetworkError | HttpBodyError | DOMException}
  */
-export async function getJson(url, { signal, timeoutMs = DEFAULT_TIMEOUT_MS, headers } = {}) {
+async function requestJson(url, init, { signal, timeoutMs = DEFAULT_TIMEOUT_MS }) {
   const timeoutController = new AbortController();
   const timer = setTimeout(() => timeoutController.abort(), timeoutMs);
   const signals = signal ? [signal, timeoutController.signal] : [timeoutController.signal];
 
   try {
-    const response = await fetch(url, { headers, signal: AbortSignal.any(signals) });
+    const response = await fetch(url, { ...init, signal: AbortSignal.any(signals) });
     if (!response.ok) {
       throw new HttpStatusError(response.status, response.headers);
     }
@@ -86,6 +90,36 @@ export async function getJson(url, { signal, timeoutMs = DEFAULT_TIMEOUT_MS, hea
   } finally {
     clearTimeout(timer);
   }
+}
+
+/**
+ * GETs a URL and parses the JSON body.
+ *
+ * @param {string} url
+ * @param {RequestOptions} [options]
+ * @returns {Promise<{ data: unknown, headers: Headers }>}
+ * @throws {HttpStatusError | HttpTimeoutError | HttpNetworkError | HttpBodyError | DOMException}
+ */
+export function getJson(url, options = {}) {
+  return requestJson(url, { headers: options.headers }, options);
+}
+
+/**
+ * POSTs a JSON body to a URL and parses the JSON answer.
+ *
+ * @param {string} url
+ * @param {unknown} body Serialised with JSON.stringify.
+ * @param {RequestOptions} [options]
+ * @returns {Promise<{ data: unknown, headers: Headers }>}
+ * @throws {HttpStatusError | HttpTimeoutError | HttpNetworkError | HttpBodyError | DOMException}
+ */
+export function postJson(url, body, options = {}) {
+  const init = {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', ...options.headers },
+    body: JSON.stringify(body),
+  };
+  return requestJson(url, init, options);
 }
 
 /**
