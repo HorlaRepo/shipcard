@@ -1,37 +1,46 @@
 .bar {
-  display: flex;
+  inline-size: 100%;
   block-size: var(--bar-height);
-  overflow: hidden;
   border: var(--rule-width) solid var(--color-ink);
   border-radius: var(--radius-sm);
 }
 
-/* Each segment grows in proportion to its repository count. */
-.segment {
-  flex: var(--share) 0 0;
+.segment:nth-child(1) {
+  fill: var(--color-ramp-1);
 }
 
-.segment:nth-child(1),
 .entry:nth-child(1) .swatch {
   background-color: var(--color-ramp-1);
 }
 
-.segment:nth-child(2),
+.segment:nth-child(2) {
+  fill: var(--color-ramp-2);
+}
+
 .entry:nth-child(2) .swatch {
   background-color: var(--color-ramp-2);
 }
 
-.segment:nth-child(3),
+.segment:nth-child(3) {
+  fill: var(--color-ramp-3);
+}
+
 .entry:nth-child(3) .swatch {
   background-color: var(--color-ramp-3);
 }
 
-.segment:nth-child(4),
+.segment:nth-child(4) {
+  fill: var(--color-ramp-4);
+}
+
 .entry:nth-child(4) .swatch {
   background-color: var(--color-ramp-4);
 }
 
-.segment:nth-child(5),
+.segment:nth-child(5) {
+  fill: var(--color-ramp-5);
+}
+
 .entry:nth-child(5) .swatch {
   background-color: var(--color-ramp-5);
 }
