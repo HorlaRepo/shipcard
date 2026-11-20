@@ -60,18 +60,19 @@ One ground, one surface, one ink, one accent. Colour never carries meaning alone
 
 ### Neutral
 
-| Role                                 | Token                 | Light     | Dark      |
-| ------------------------------------ | --------------------- | --------- | --------- |
-| Carton ground: the page              | `--color-ground`      | `#EDEAE3` | `#11110E` |
-| Label stock: cards, inputs, tables   | `--color-surface`     | `#FFFFFF` | `#1C1B17` |
-| Ink: text, strong rules              | `--color-ink`         | `#15140F` | `#F2EFE7` |
-| Faded ink: captions, secondary text  | `--color-ink-muted`   | `#55524A` | `#A9A599` |
-| Control edge: input and chip borders | `--color-control`     | `#77736A` | `#8D897D` |
-| Hairline: decorative dividers only   | `--color-rule`        | `#C9C5BA` | `#34322B` |
-| Edge of a yellow fill                | `--color-accent-edge` | `#15140F` | `#FFD500` |
-| Focus ring                           | `--color-focus`       | `#15140F` | `#FFD500` |
-| Problem: error text and icons        | `--color-danger`      | `#A3231C` | `#FF9388` |
-| Confirmed: success text and icons    | `--color-success`     | `#1B6435` | `#7FD6A0` |
+| Role                                 | Token                  | Light     | Dark      |
+| ------------------------------------ | ---------------------- | --------- | --------- |
+| Carton ground: the page              | `--color-ground`       | `#EDEAE3` | `#11110E` |
+| Label stock: cards, inputs, tables   | `--color-surface`      | `#FFFFFF` | `#1C1B17` |
+| Ink: text, strong rules              | `--color-ink`          | `#15140F` | `#F2EFE7` |
+| Faded ink: captions, secondary text  | `--color-ink-muted`    | `#55524A` | `#A9A599` |
+| Control edge: input and chip borders | `--color-control`      | `#77736A` | `#8D897D` |
+| Hairline: decorative dividers only   | `--color-rule`         | `#C9C5BA` | `#34322B` |
+| Yellow under the pointer             | `--color-accent-hover` | `#F2C900` | `#FFE04D` |
+| Edge of a yellow fill                | `--color-accent-edge`  | `#15140F` | `#FFD500` |
+| Focus ring                           | `--color-focus`        | `#15140F` | `#FFD500` |
+| Problem: error text and icons        | `--color-danger`       | `#A3231C` | `#FF9388` |
+| Confirmed: success text and icons    | `--color-success`      | `#1B6435` | `#7FD6A0` |
 
 The language bar on the card is a five-step ramp of ink mixed into the surface (`--color-ramp-1` to `--color-ramp-5`: 100%, 72%, 52%, 36%, 22%). It is one hue on purpose: a different colour per language would put five accents in the card. The bar is outlined in ink and every segment is also listed by name and percentage, so the ramp never carries the data alone.
 
@@ -168,11 +169,17 @@ There are no pills and no circles. Hairlines are 1px (`--rule-width`); strong ru
 | `--ease-out`        | `cubic-bezier(0.16, 1, 0.3, 1)`  | Anything entering or responding to the visitor |
 | `--ease-in-out`     | `cubic-bezier(0.65, 0, 0.35, 1)` | Something moving between two resting positions |
 | `--reveal-distance` | 0.75rem                          | How far an entering element travels            |
+| `--press-scale`     | 0.97                             | A pressed button, chip or toggle               |
+| `--shrink-scale`    | 0.88                             | The wordmark once the page has scrolled        |
+| `--turn-open`       | 45deg                            | The FAQ plus turning into a cross              |
+| `--stagger-step`    | 60ms                             | Delay between the three steps arriving         |
 
 - Only `transform` and `opacity` are animated.
 - Nothing bounces or overshoots, and no interaction takes longer than `--duration-slow`.
 - Under `prefers-reduced-motion: reduce`, movement is removed and state changes are instant or a plain fade; no information depends on motion.
-- Hover effects sit behind `@media (hover: hover)`.
+- Hover effects sit behind `@media (hover: hover) and (pointer: fine)`.
+- Things that enter (an FAQ answer, the mobile menu, the card) ease in; things that leave do so at once, so closing never lags the click.
+- There is one scroll reveal (the three steps) and no loading shimmer: a lookup takes about a third of a second, and the skeleton is static.
 
 ## Do's and Don'ts
 
