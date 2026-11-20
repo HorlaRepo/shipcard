@@ -1,21 +1,7 @@
+.list {
+  border-block-start: var(--rule-width) solid var(--color-rule);
+}
+
 .item {
-  padding-block: var(--space-5);
   border-block-end: var(--rule-width) solid var(--color-rule);
-}
-
-.item:first-child {
-  padding-block-start: 0;
-}
-
-.question {
-  font-size: var(--text-heading);
-  font-stretch: var(--width-narrow);
-  font-weight: var(--weight-bold);
-  line-height: var(--leading-heading);
-}
-
-.answer {
-  max-inline-size: var(--measure);
-  margin-block-start: var(--space-2);
-  color: var(--color-ink-muted);
 }

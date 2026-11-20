@@ -1,0 +1,58 @@
+.trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  inline-size: 100%;
+  min-block-size: var(--target-min);
+  padding-block: var(--space-4);
+  font-size: var(--text-heading);
+  font-stretch: var(--width-narrow);
+  font-weight: var(--weight-bold);
+  line-height: var(--leading-heading);
+  text-align: start;
+}
+
+/* The plus turns into a cross when open. */
+.icon {
+  flex: none;
+  transition: transform var(--duration-base) var(--ease-out);
+}
+
+.trigger[aria-expanded='true'] .icon {
+  transform: rotate(var(--turn-open));
+}
+
+/* Opening fades the answer in; closing is immediate, so it never lags the click. */
+.panel {
+  max-inline-size: var(--measure);
+  padding-block-end: var(--space-5);
+  color: var(--color-ink-muted);
+  transition:
+    opacity var(--duration-base) var(--ease-out),
+    transform var(--duration-base) var(--ease-out);
+
+  @starting-style {
+    opacity: 0;
+    transform: translateY(calc(-1 * var(--space-2)));
+  }
+}
+
+.panel[hidden] {
+  display: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .trigger:hover {
+    text-decoration: underline;
+    text-decoration-thickness: var(--rule-width);
+    text-underline-offset: var(--underline-offset);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .icon,
+  .panel {
+    transition: none;
+  }
+}

@@ -1,3 +1,4 @@
+import Disclosure from '../components/ui/Disclosure.jsx';
 import Section from '../components/ui/Section.jsx';
 import styles from './Faq.module.css';
 
@@ -9,7 +10,8 @@ import styles from './Faq.module.css';
  */
 
 /**
- * Questions a careful visitor asks before trusting the card.
+ * Questions a careful visitor asks before trusting the card. Each answer
+ * opens under its question; several can be open at once.
  *
  * @param {{ content: FaqContent }} props
  */
@@ -19,8 +21,9 @@ export default function Faq({ content }) {
       <ul className={styles.list}>
         {content.items.map((item) => (
           <li key={item.id} className={styles.item}>
-            <h3 className={styles.question}>{item.question}</h3>
-            <p className={styles.answer}>{item.answer}</p>
+            <Disclosure title={item.question}>
+              <p>{item.answer}</p>
+            </Disclosure>
           </li>
         ))}
       </ul>
