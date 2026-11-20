@@ -10,6 +10,31 @@
   box-shadow: var(--shadow-label);
 }
 
+/* The page's one authored moment: a finished card arrives like a label
+   leaving a printer. Under reduced motion it fades without moving. */
+.arriving {
+  animation: arrive var(--duration-slow) var(--ease-out);
+}
+
+@keyframes arrive {
+  from {
+    opacity: 0;
+    transform: translateY(var(--reveal-distance));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .arriving {
+    animation-name: fade;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+}
+
 .strip {
   display: flex;
   flex: none;

@@ -12,6 +12,11 @@
   line-height: var(--leading-heading);
   text-align: center;
   text-decoration: none;
+  transition: transform var(--duration-fast) var(--ease-out);
+}
+
+.button:active {
+  transform: scale(var(--press-scale));
 }
 
 .primary {
@@ -28,4 +33,20 @@
 
 .button:disabled {
   cursor: progress;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .primary:hover {
+    background-color: var(--color-accent-hover);
+  }
+
+  .secondary:hover {
+    border-color: var(--color-ink);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button {
+    transition: none;
+  }
 }
