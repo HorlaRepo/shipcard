@@ -1,0 +1,31 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  min-block-size: var(--target-min);
+  padding-inline: var(--space-5);
+  border: var(--rule-width) solid transparent;
+  border-radius: var(--radius-md);
+  font-stretch: var(--width-narrow);
+  font-weight: var(--weight-bold);
+  line-height: var(--leading-heading);
+  text-align: center;
+  text-decoration: none;
+}
+
+.primary {
+  border-color: var(--color-accent-edge);
+  background-color: var(--color-accent);
+  color: var(--color-on-accent);
+}
+
+.secondary {
+  border-color: var(--color-control);
+  background-color: var(--color-surface);
+  color: var(--color-ink);
+}
+
+.button:disabled {
+  cursor: progress;
+}

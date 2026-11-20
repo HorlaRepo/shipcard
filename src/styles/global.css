@@ -58,3 +58,8 @@ input {
     scroll-behavior: smooth;
   }
 }
+
+/* Set by useModalDialog while a modal is open, so the page behind stays put. */
+html[data-scroll-locked] {
+  overflow: hidden;
+}

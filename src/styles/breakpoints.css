@@ -1,0 +1,11 @@
+/*
+ * Breakpoints, mobile-first, named once. Custom properties cannot be used in
+ * media queries, so these are custom media, compiled by Lightning CSS.
+ *
+ * Custom media is scoped to a file: a stylesheet that uses a breakpoint
+ * imports this one. The file holds no rules, so importing it adds no CSS.
+ * src/lib/breakpoints.js mirrors these values for JavaScript.
+ */
+@custom-media --from-sm (min-width: 40rem);
+@custom-media --from-md (min-width: 60rem);
+@custom-media --from-lg (min-width: 80rem);
