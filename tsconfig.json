@@ -12,7 +12,8 @@
     "noUncheckedIndexedAccess": true,
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
-    "types": ["vite/client", "vitest/globals", "node"]
+    "types": ["vite/client", "vitest/globals", "node"],
+    "resolveJsonModule": true
   },
   "include": ["src", "tests", "vite.config.js"]
 }
