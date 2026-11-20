@@ -103,6 +103,7 @@ export default function ProofCardForm({
           autoCorrect="off"
           spellCheck="false"
           enterKeyHint="go"
+          required
           aria-invalid={problem ? 'true' : undefined}
           aria-describedby={`${hintId} ${problemId}`}
         />
