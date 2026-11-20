@@ -2,6 +2,7 @@
 
 .table {
   display: grid;
+  margin-block-start: var(--space-5);
   border-radius: var(--radius-md);
   background-color: var(--color-surface);
 }
@@ -37,7 +38,18 @@
   margin-block-start: var(--space-5);
 }
 
+/* The same line is reserved in both periods, so switching moves nothing. */
+.billing {
+  min-block-size: 1lh;
+  margin-block-start: var(--space-1);
+  color: var(--color-ink-muted);
+  font-size: var(--text-small);
+  line-height: var(--leading-snug);
+}
+
 .amount {
+  /* Wide enough for the longest price, so a shorter one does not pull the label left. */
+  min-inline-size: var(--price-width);
   font-size: var(--text-title);
   font-stretch: var(--width-condensed);
   font-variant-numeric: tabular-nums;
