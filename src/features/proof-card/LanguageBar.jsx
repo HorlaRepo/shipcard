@@ -5,20 +5,39 @@ import styles from './LanguageBar.module.css';
  * decorative: the list beside it carries every name and percentage, so the
  * tints never have to be told apart.
  *
+ * The bar is an SVG whose segment positions are attributes, because the
+ * page's Content-Security-Policy does not allow inline styles.
+ *
  * @param {{ languages: import('./mapProfile.js').LanguageShare[] }} props
  */
 export default function LanguageBar({ languages }) {
+  const total = languages.reduce((sum, language) => sum + language.count, 0);
+  // Each segment starts where the ones before it end.
+  const segments = languages.map((language, index) => ({
+    name: language.name,
+    x: languages.slice(0, index).reduce((sum, earlier) => sum + earlier.count, 0),
+    width: language.count,
+  }));
+
   return (
     <>
-      <div className={styles.bar} aria-hidden="true">
-        {languages.map((language) => (
-          <span
-            key={language.name}
+      <svg
+        className={styles.bar}
+        viewBox={`0 0 ${total} 1`}
+        preserveAspectRatio="none"
+        aria-hidden="true"
+        focusable="false"
+      >
+        {segments.map((segment) => (
+          <rect
+            key={segment.name}
             className={styles.segment}
-            style={/** @type {import('react').CSSProperties} */ ({ '--share': language.count })}
+            x={segment.x}
+            width={segment.width}
+            height="1"
           />
         ))}
-      </div>
+      </svg>
       <ul className={styles.legend}>
         {languages.map((language) => (
           <li key={language.name} className={styles.entry}>
