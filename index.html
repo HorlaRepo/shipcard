@@ -3,7 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shipcard</title>
+    <title>Shipcard: a proof-of-work card from your GitHub profile</title>
+    <meta
+      name="description"
+      content="Type a GitHub username and get a live proof-of-work card: repositories, stars, top languages and when you last shipped. No sign-in and no token."
+    />
+    <link rel="canonical" href="https://shipcard.fran64biz.workers.dev/" />
+    <meta name="color-scheme" content="light dark" />
+
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Shipcard" />
+    <meta property="og:title" content="Shipcard: a proof-of-work card from your GitHub profile" />
+    <meta
+      property="og:description"
+      content="Type a GitHub username and get a live proof-of-work card: repositories, stars, top languages and when you last shipped. No sign-in and no token."
+    />
+    <meta property="og:url" content="https://shipcard.fran64biz.workers.dev/" />
+    <meta property="og:image" content="https://shipcard.fran64biz.workers.dev/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Your résumé says what you know. Your code proves it. Beside the headline, a blank Shipcard proof-of-work card."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- The offers mirror the pricing in src/content/site.js; index.test.js checks that they agree. -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Shipcard",
+        "description": "Turns a GitHub username into a proof-of-work card built from live public data: repositories, stars, top languages and the most recent push.",
+        "url": "https://shipcard.fran64biz.workers.dev/",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Any (web browser)",
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Free",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "name": "Pro",
+            "price": "8",
+            "priceCurrency": "USD",
+            "description": "Per month, billed monthly"
+          },
+          {
+            "@type": "Offer",
+            "name": "Team",
+            "price": "20",
+            "priceCurrency": "USD",
+            "description": "Per seat, per month, billed monthly"
+          }
+        ]
+      }
+    </script>
     <meta name="theme-color" content="#edeae3" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#11110e" media="(prefers-color-scheme: dark)" />
     <!--
@@ -35,6 +97,12 @@
   </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      <p>
+        Shipcard builds its page and its proof-of-work cards in your browser, so it needs JavaScript
+        to run.
+      </p>
+    </noscript>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

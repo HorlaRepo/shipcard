@@ -1,0 +1,27 @@
+# Response headers for every path, read by Cloudflare at the edge (ADR 0012).
+#
+# Content-Security-Policy, source by source:
+#   default-src 'none'   nothing loads unless a line below allows it
+#   script-src           this origin, plus the one inline script in index.html
+#                        (the no-flash theme script), allowed by its SHA-256
+#                        hash; index.test.js fails if the two drift apart
+#   style-src 'self'     no inline styles anywhere on the page
+#   img-src              this origin and GitHub avatars
+#   connect-src          this origin (the waitlist) and GitHub's API
+#   frame-ancestors      the page may not be framed
+/*
+  Content-Security-Policy: default-src 'none'; script-src 'self' 'sha256-L99olWN104RBXrEPACL8NcteqyO1pIKW3t9yXKpVmVQ='; style-src 'self'; img-src 'self' https://avatars.githubusercontent.com; font-src 'self'; connect-src 'self' https://api.github.com; base-uri 'none'; form-action 'self'; frame-ancestors 'none'
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Permissions-Policy: accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()
+  Cross-Origin-Opener-Policy: same-origin
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+
+# Built assets carry a content hash in their name, so they never change.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# The font files are not hashed, so they get a shorter life.
+/fonts/*
+  Cache-Control: public, max-age=2592000
