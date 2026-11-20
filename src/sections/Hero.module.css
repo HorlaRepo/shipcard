@@ -1,0 +1,33 @@
+.hero {
+  padding-block: var(--space-7) var(--section-gap);
+}
+
+.title {
+  font-size: var(--text-display);
+  font-stretch: var(--width-condensed);
+  font-weight: var(--weight-black);
+  line-height: var(--leading-display);
+  text-transform: uppercase;
+}
+
+.line {
+  display: block;
+  text-wrap: balance;
+}
+
+/* The highlighter stroke: the one yellow mark in the first screenful. */
+.marked {
+  padding-inline: var(--marker-bleed);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-accent);
+  color: var(--color-on-accent);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.lead {
+  max-inline-size: var(--measure);
+  margin-block-start: var(--space-5);
+  font-size: var(--text-lead);
+  line-height: var(--leading-snug);
+}

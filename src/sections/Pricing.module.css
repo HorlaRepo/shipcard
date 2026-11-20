@@ -1,0 +1,100 @@
+@import '../styles/breakpoints.css';
+
+.table {
+  display: grid;
+  border-radius: var(--radius-md);
+  background-color: var(--color-surface);
+}
+
+.tier {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-5);
+  border-block-end: var(--rule-width) solid var(--color-rule);
+}
+
+.tier:last-child {
+  border-block-end: 0;
+}
+
+.name {
+  font-size: var(--text-heading);
+  font-stretch: var(--width-narrow);
+  font-weight: var(--weight-bold);
+  line-height: var(--leading-heading);
+}
+
+.summary {
+  margin-block-start: var(--space-1);
+  color: var(--color-ink-muted);
+}
+
+.price {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-2);
+  margin-block-start: var(--space-5);
+}
+
+.amount {
+  font-size: var(--text-title);
+  font-stretch: var(--width-condensed);
+  font-variant-numeric: tabular-nums;
+  font-weight: var(--weight-black);
+  line-height: var(--leading-title);
+}
+
+.period {
+  color: var(--color-ink-muted);
+  font-family: var(--font-mono);
+  font-size: var(--text-caption);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-caption);
+  text-transform: uppercase;
+}
+
+.features {
+  display: grid;
+  gap: var(--space-3);
+  margin-block: var(--space-5);
+  padding-block-start: var(--space-5);
+  border-block-start: var(--rule-width) solid var(--color-rule);
+}
+
+.feature {
+  display: flex;
+  gap: var(--space-3);
+  line-height: var(--leading-snug);
+}
+
+/* Pushed to the bottom so the actions line up across columns. */
+.action {
+  display: grid;
+  gap: var(--space-3);
+  margin-block-start: auto;
+}
+
+.recommended {
+  font-family: var(--font-mono);
+  font-size: var(--text-caption);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-caption);
+  text-transform: uppercase;
+}
+
+@media (--from-md) {
+  .table {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .tier {
+    padding: var(--space-6);
+    border-block-end: 0;
+    border-inline-end: var(--rule-width) solid var(--color-rule);
+  }
+
+  .tier:last-child {
+    border-inline-end: 0;
+  }
+}

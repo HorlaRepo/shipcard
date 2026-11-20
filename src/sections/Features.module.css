@@ -1,0 +1,32 @@
+@import '../styles/breakpoints.css';
+
+.item {
+  display: grid;
+  gap: var(--space-2);
+  padding-block: var(--space-5);
+  border-block-end: var(--rule-width) solid var(--color-rule);
+}
+
+.item:first-child {
+  padding-block-start: 0;
+}
+
+.title {
+  font-size: var(--text-heading);
+  font-stretch: var(--width-narrow);
+  font-weight: var(--weight-bold);
+  line-height: var(--leading-heading);
+  text-wrap: balance;
+}
+
+.body {
+  max-inline-size: var(--measure);
+  color: var(--color-ink-muted);
+}
+
+@media (--from-sm) {
+  .item {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    gap: var(--space-5);
+  }
+}
