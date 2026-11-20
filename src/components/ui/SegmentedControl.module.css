@@ -1,0 +1,86 @@
+.group {
+  min-inline-size: 0;
+  padding: 0;
+  border: 0;
+}
+
+.legend {
+  padding: 0;
+  margin-block-end: var(--space-2);
+  color: var(--color-ink-muted);
+  font-family: var(--font-mono);
+  font-size: var(--text-caption);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-caption);
+  text-transform: uppercase;
+}
+
+.options {
+  display: inline-flex;
+  gap: var(--space-1);
+  padding: var(--space-1);
+  border: var(--rule-width) solid var(--color-control);
+  border-radius: var(--radius-md);
+  background-color: var(--color-surface);
+}
+
+.option {
+  position: relative;
+  display: inline-flex;
+  cursor: pointer;
+}
+
+/* The radio stays in the accessibility tree and takes focus; the label is what is seen. */
+.input {
+  position: absolute;
+  inset: 0;
+  inline-size: 100%;
+  block-size: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.label {
+  display: inline-flex;
+  align-items: center;
+  min-block-size: var(--target-min);
+  padding-inline: var(--space-4);
+  border: var(--rule-width) solid transparent;
+  border-radius: var(--radius-sm);
+  font-stretch: var(--width-narrow);
+  font-weight: var(--weight-bold);
+  white-space: pre;
+  transition: transform var(--duration-fast) var(--ease-out);
+}
+
+.note {
+  font-family: var(--font-mono);
+  font-size: var(--text-caption);
+  font-stretch: var(--width-normal);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-caption);
+  text-transform: uppercase;
+}
+
+/* The selected option is a selected state, so it may be yellow (One Marker Rule). */
+.input:checked + .label {
+  border-color: var(--color-accent-edge);
+  background-color: var(--color-accent);
+  color: var(--color-on-accent);
+}
+
+.input:focus-visible + .label {
+  outline: var(--rule-strong) solid var(--color-focus);
+  outline-offset: var(--rule-strong);
+}
+
+.input:active + .label {
+  transform: scale(var(--press-scale));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .label {
+    transition: none;
+  }
+}
