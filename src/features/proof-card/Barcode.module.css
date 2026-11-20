@@ -1,0 +1,6 @@
+.barcode {
+  inline-size: 100%;
+  block-size: var(--barcode-height);
+  fill: currentColor;
+  shape-rendering: crispEdges;
+}

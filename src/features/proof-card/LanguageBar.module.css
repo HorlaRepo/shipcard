@@ -1,0 +1,65 @@
+.bar {
+  display: flex;
+  block-size: var(--bar-height);
+  overflow: hidden;
+  border: var(--rule-width) solid var(--color-ink);
+  border-radius: var(--radius-sm);
+}
+
+/* Each segment grows in proportion to its repository count. */
+.segment {
+  flex: var(--share) 0 0;
+}
+
+.segment:nth-child(1),
+.entry:nth-child(1) .swatch {
+  background-color: var(--color-ramp-1);
+}
+
+.segment:nth-child(2),
+.entry:nth-child(2) .swatch {
+  background-color: var(--color-ramp-2);
+}
+
+.segment:nth-child(3),
+.entry:nth-child(3) .swatch {
+  background-color: var(--color-ramp-3);
+}
+
+.segment:nth-child(4),
+.entry:nth-child(4) .swatch {
+  background-color: var(--color-ramp-4);
+}
+
+.segment:nth-child(5),
+.entry:nth-child(5) .swatch {
+  background-color: var(--color-ramp-5);
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1) var(--space-4);
+  margin-block-start: var(--space-3);
+  font-family: var(--font-mono);
+  font-size: var(--text-caption);
+  font-weight: var(--weight-medium);
+  line-height: var(--leading-snug);
+}
+
+.entry {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  white-space: nowrap;
+}
+
+.swatch {
+  inline-size: var(--space-2);
+  block-size: var(--space-2);
+  border: var(--rule-width) solid var(--color-ink);
+}
+
+.percent {
+  color: var(--color-ink-muted);
+}

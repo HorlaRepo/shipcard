@@ -63,6 +63,10 @@
   --header-height: 4rem;
   --target-min: 2.75rem;
   --card-width: 24rem;
+  --card-height: 41rem;
+  --avatar-size: 4rem;
+  --bar-height: 0.75rem;
+  --barcode-height: 2.25rem;
 
   /* Shape */
   --radius-sm: 2px;
