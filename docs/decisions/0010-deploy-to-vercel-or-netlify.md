@@ -1,6 +1,6 @@
 # 0010. Deploy to Vercel or Netlify with security headers in config
 
-- Status: Accepted
+- Status: Superseded by 0012
 - Date: 2026-11-20
 
 ## Context
@@ -24,4 +24,4 @@ A VPS with nginx. Rejected because it adds patching, TLS and uptime work that bu
 ## Consequences
 - Positive: headers in config, preview deploys, no servers.
 - Negative / trade-offs: host-specific config file; the waitlist needs a separate provider unless Netlify Forms is used.
-- Revisit if: the project owner names a host, or previews or header control fall short.
+- Revisit if: the project owner names a host. This happened: see 0012.

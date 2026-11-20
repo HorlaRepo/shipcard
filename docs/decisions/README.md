@@ -20,8 +20,9 @@ Accepted decisions are reopened only with new evidence. A replaced decision is m
 | [0007](0007-motion-with-css-and-intersection-observer.md) | Motion with CSS transitions and IntersectionObserver | Accepted |
 | [0008](0008-waitlist-submits-to-a-form-provider.md) | Waitlist submits to a hosted form provider behind `submitWaitlist()` | Accepted |
 | [0009](0009-vitest-testing-library-and-msw.md) | Vitest, React Testing Library and MSW | Accepted |
-| [0010](0010-deploy-to-vercel-or-netlify.md) | Deploy to Vercel or Netlify with security headers in config | Accepted |
+| [0010](0010-deploy-to-vercel-or-netlify.md) | Deploy to Vercel or Netlify with security headers in config | Superseded by 0012 |
 | [0011](0011-skill-set-with-one-design-authority.md) | A fixed skill set, with Impeccable as the single design authority | Accepted |
+| [0012](0012-host-on-cloudflare-workers.md) | Host on Cloudflare Workers with static assets | Accepted |
 
 ## Decision log
 
