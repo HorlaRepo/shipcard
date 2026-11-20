@@ -16,19 +16,19 @@ Updated at the end of every session. Read it at the start of the next one, after
 
 ## Done
 
-- Repository created; brief and its amendments copied to `docs/BRIEF.md`.
+- Phase 0: Vite + React scaffold; ESLint, Prettier, `checkJs`, Husky, Vitest, MSW, knip, size-limit; CI workflow; ADRs 0001–0013; six skills installed. `npm run check` passes.
 
 ## In progress
 
-- Phase 0.
+Nothing.
 
 ## Next
 
-- Finish Phase 0: scaffold, lint, type-check, tests, hooks, CI.
+- Phase 1: read Impeccable's new-work references and write `docs/DESIGN.md`; implement `tokens.css`, `reset.css`, `global.css`.
 
 ## Open issues
 
-None.
+- React and React DOM alone are 68 KB gzipped, so application code has about 32 KB of the 100 KB budget.
 
 ## Blockers
 
