@@ -16,6 +16,7 @@ Accepted decisions are reopened only with new evidence. A replaced decision is m
 | [0003](0003-javascript-with-jsdoc-types.md) | JavaScript with JSDoc types, checked by `tsc --noEmit` | Accepted |
 | [0004](0004-css-modules-and-design-tokens.md) | CSS Modules with design tokens as CSS custom properties | Accepted |
 | [0005](0005-state-reducer-context-and-url.md) | State: a reducer for the demo, context for the theme, the URL for the username | Accepted |
+| [0006](0006-unauthenticated-github-rest-api.md) | GitHub REST API, unauthenticated, two requests per lookup | Accepted |
 
 ## Decision log
 
