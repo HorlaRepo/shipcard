@@ -1,0 +1,914 @@
+{
+  "capturedAt": "2026-11-20T22:25:45Z",
+  "user": {
+    "login": "sindresorhus",
+    "name": "Sindre Sorhus",
+    "avatar_url": "https://avatars.githubusercontent.com/u/170270?v=4",
+    "html_url": "https://github.com/sindresorhus",
+    "bio": "Full-Time Open-Sourcerer. Focused on Swift & JavaScript. Makes macOS apps, CLI tools, npm packages.",
+    "public_repos": 1149,
+    "created_at": "2009-12-20T22:57:02Z"
+  },
+  "repos": [
+    {
+      "name": "filenamify",
+      "html_url": "https://github.com/sindresorhus/filenamify",
+      "stargazers_count": 526,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-20T19:09:08Z"
+    },
+    {
+      "name": "eslint-plugin-unicorn",
+      "html_url": "https://github.com/sindresorhus/eslint-plugin-unicorn",
+      "stargazers_count": 5295,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-20T19:07:10Z"
+    },
+    {
+      "name": "got",
+      "html_url": "https://github.com/sindresorhus/got",
+      "stargazers_count": 14965,
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-20T09:46:06Z"
+    },
+    {
+      "name": "type-fest",
+      "html_url": "https://github.com/sindresorhus/type-fest",
+      "stargazers_count": 17552,
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-19T07:45:43Z"
+    },
+    {
+      "name": "ts-extras",
+      "html_url": "https://github.com/sindresorhus/ts-extras",
+      "stargazers_count": 820,
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-18T17:17:58Z"
+    },
+    {
+      "name": "execa",
+      "html_url": "https://github.com/sindresorhus/execa",
+      "stargazers_count": 7652,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-18T09:01:26Z"
+    },
+    {
+      "name": "transliterate",
+      "html_url": "https://github.com/sindresorhus/transliterate",
+      "stargazers_count": 325,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-17T14:17:52Z"
+    },
+    {
+      "name": "is-svg",
+      "html_url": "https://github.com/sindresorhus/is-svg",
+      "stargazers_count": 141,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-17T12:10:34Z"
+    },
+    {
+      "name": "sindresorhus.github.com",
+      "html_url": "https://github.com/sindresorhus/sindresorhus.github.com",
+      "stargazers_count": 401,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-16T21:32:08Z"
+    },
+    {
+      "name": "supercharge-meta",
+      "html_url": "https://github.com/sindresorhus/supercharge-meta",
+      "stargazers_count": 43,
+      "language": null,
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-16T17:22:31Z"
+    },
+    {
+      "name": "awesome-chatgpt",
+      "html_url": "https://github.com/sindresorhus/awesome-chatgpt",
+      "stargazers_count": 6503,
+      "language": null,
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-15T18:41:25Z"
+    },
+    {
+      "name": "indent-string",
+      "html_url": "https://github.com/sindresorhus/indent-string",
+      "stargazers_count": 117,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-15T16:41:40Z"
+    },
+    {
+      "name": "prism-website",
+      "html_url": "https://github.com/sindresorhus/prism-website",
+      "stargazers_count": 2,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2026-11-15T13:01:03Z"
+    },
+    {
+      "name": "prism",
+      "html_url": "https://github.com/sindresorhus/prism",
+      "stargazers_count": 5,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2026-11-15T11:43:30Z"
+    },
+    {
+      "name": "crypto-hash",
+      "html_url": "https://github.com/sindresorhus/crypto-hash",
+      "stargazers_count": 648,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-14T19:58:14Z"
+    },
+    {
+      "name": "nano-spawn",
+      "html_url": "https://github.com/sindresorhus/nano-spawn",
+      "stargazers_count": 595,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-14T19:49:45Z"
+    },
+    {
+      "name": "quick-lru",
+      "html_url": "https://github.com/sindresorhus/quick-lru",
+      "stargazers_count": 774,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-14T19:43:06Z"
+    },
+    {
+      "name": "debounce",
+      "html_url": "https://github.com/sindresorhus/debounce",
+      "stargazers_count": 850,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-14T19:27:28Z"
+    },
+    {
+      "name": "strip-json-comments",
+      "html_url": "https://github.com/sindresorhus/strip-json-comments",
+      "stargazers_count": 629,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-14T08:09:34Z"
+    },
+    {
+      "name": "file-type",
+      "html_url": "https://github.com/sindresorhus/file-type",
+      "stargazers_count": 4340,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-14T07:58:36Z"
+    },
+    {
+      "name": "string-width",
+      "html_url": "https://github.com/sindresorhus/string-width",
+      "stargazers_count": 533,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-11T16:31:21Z"
+    },
+    {
+      "name": "swift-markdown",
+      "html_url": "https://github.com/sindresorhus/swift-markdown",
+      "stargazers_count": 4,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2026-11-11T12:05:46Z"
+    },
+    {
+      "name": "slugify",
+      "html_url": "https://github.com/sindresorhus/slugify",
+      "stargazers_count": 2713,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-08T18:07:54Z"
+    },
+    {
+      "name": "editorconfig-sublime",
+      "html_url": "https://github.com/sindresorhus/editorconfig-sublime",
+      "stargazers_count": 1774,
+      "language": "Python",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-08T17:55:53Z"
+    },
+    {
+      "name": "DSStore",
+      "html_url": "https://github.com/sindresorhus/DSStore",
+      "stargazers_count": 80,
+      "language": "Swift",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-06T20:53:25Z"
+    },
+    {
+      "name": "reveal-file",
+      "html_url": "https://github.com/sindresorhus/reveal-file",
+      "stargazers_count": 69,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-03T19:13:23Z"
+    },
+    {
+      "name": "clean-stack",
+      "html_url": "https://github.com/sindresorhus/clean-stack",
+      "stargazers_count": 347,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-02T21:14:58Z"
+    },
+    {
+      "name": "serialize-error",
+      "html_url": "https://github.com/sindresorhus/serialize-error",
+      "stargazers_count": 607,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-02T20:42:57Z"
+    },
+    {
+      "name": "p-retry",
+      "html_url": "https://github.com/sindresorhus/p-retry",
+      "stargazers_count": 1040,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-02T20:38:40Z"
+    },
+    {
+      "name": "p-some",
+      "html_url": "https://github.com/sindresorhus/p-some",
+      "stargazers_count": 39,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-02T20:34:41Z"
+    },
+    {
+      "name": "p-timeout",
+      "html_url": "https://github.com/sindresorhus/p-timeout",
+      "stargazers_count": 309,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-02T20:25:28Z"
+    },
+    {
+      "name": "p-cancelable",
+      "html_url": "https://github.com/sindresorhus/p-cancelable",
+      "stargazers_count": 451,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-02T20:03:10Z"
+    },
+    {
+      "name": "p-event",
+      "html_url": "https://github.com/sindresorhus/p-event",
+      "stargazers_count": 450,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-02T19:33:18Z"
+    },
+    {
+      "name": "parse-ms",
+      "html_url": "https://github.com/sindresorhus/parse-ms",
+      "stargazers_count": 124,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-02T19:28:20Z"
+    },
+    {
+      "name": "globals",
+      "html_url": "https://github.com/sindresorhus/globals",
+      "stargazers_count": 620,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-01T11:00:04Z"
+    },
+    {
+      "name": "builtin-modules",
+      "html_url": "https://github.com/sindresorhus/builtin-modules",
+      "stargazers_count": 131,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-01T10:27:19Z"
+    },
+    {
+      "name": "highlight.js",
+      "html_url": "https://github.com/sindresorhus/highlight.js",
+      "stargazers_count": 5,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2026-10-31T20:02:06Z"
+    },
+    {
+      "name": "cli-truncate",
+      "html_url": "https://github.com/sindresorhus/cli-truncate",
+      "stargazers_count": 98,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-31T10:11:36Z"
+    },
+    {
+      "name": "get-windows",
+      "html_url": "https://github.com/sindresorhus/get-windows",
+      "stargazers_count": 925,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-31T09:30:34Z"
+    },
+    {
+      "name": "ora",
+      "html_url": "https://github.com/sindresorhus/ora",
+      "stargazers_count": 9775,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-31T07:00:05Z"
+    },
+    {
+      "name": "round-to",
+      "html_url": "https://github.com/sindresorhus/round-to",
+      "stargazers_count": 162,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-29T14:42:42Z"
+    },
+    {
+      "name": "tsconfig",
+      "html_url": "https://github.com/sindresorhus/tsconfig",
+      "stargazers_count": 377,
+      "language": null,
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-25T08:10:47Z"
+    },
+    {
+      "name": "np",
+      "html_url": "https://github.com/sindresorhus/np",
+      "stargazers_count": 7716,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-24T13:44:01Z"
+    },
+    {
+      "name": "eslint-cssicorn",
+      "html_url": "https://github.com/sindresorhus/eslint-cssicorn",
+      "stargazers_count": 84,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-23T15:12:07Z"
+    },
+    {
+      "name": "query-string",
+      "html_url": "https://github.com/sindresorhus/query-string",
+      "stargazers_count": 6919,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-21T12:23:52Z"
+    },
+    {
+      "name": "emittery",
+      "html_url": "https://github.com/sindresorhus/emittery",
+      "stargazers_count": 2077,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-20T13:57:00Z"
+    },
+    {
+      "name": "unlimited-timeout",
+      "html_url": "https://github.com/sindresorhus/unlimited-timeout",
+      "stargazers_count": 48,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-17T14:32:27Z"
+    },
+    {
+      "name": "p-queue",
+      "html_url": "https://github.com/sindresorhus/p-queue",
+      "stargazers_count": 4305,
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-16T21:25:44Z"
+    },
+    {
+      "name": "gifkit",
+      "html_url": "https://github.com/sindresorhus/gifkit",
+      "stargazers_count": 36,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-15T18:27:08Z"
+    },
+    {
+      "name": "nz",
+      "html_url": "https://github.com/sindresorhus/nz",
+      "stargazers_count": 8,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-15T13:51:05Z"
+    },
+    {
+      "name": "p-wait-for",
+      "html_url": "https://github.com/sindresorhus/p-wait-for",
+      "stargazers_count": 170,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-15T13:40:09Z"
+    },
+    {
+      "name": "debounce-fn",
+      "html_url": "https://github.com/sindresorhus/debounce-fn",
+      "stargazers_count": 134,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-15T13:08:19Z"
+    },
+    {
+      "name": "p-memoize",
+      "html_url": "https://github.com/sindresorhus/p-memoize",
+      "stargazers_count": 453,
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-15T12:40:31Z"
+    },
+    {
+      "name": "p-debounce",
+      "html_url": "https://github.com/sindresorhus/p-debounce",
+      "stargazers_count": 241,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-15T12:37:20Z"
+    },
+    {
+      "name": "fast-cli",
+      "html_url": "https://github.com/sindresorhus/fast-cli",
+      "stargazers_count": 2898,
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-14T21:45:57Z"
+    },
+    {
+      "name": "normalize-url",
+      "html_url": "https://github.com/sindresorhus/normalize-url",
+      "stargazers_count": 886,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-14T17:24:37Z"
+    },
+    {
+      "name": "aggregate-error",
+      "html_url": "https://github.com/sindresorhus/aggregate-error",
+      "stargazers_count": 249,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-14T16:55:40Z"
+    },
+    {
+      "name": "package_control_channel",
+      "html_url": "https://github.com/sindresorhus/package_control_channel",
+      "stargazers_count": 1,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2026-10-14T15:28:11Z"
+    },
+    {
+      "name": "humanize-string",
+      "html_url": "https://github.com/sindresorhus/humanize-string",
+      "stargazers_count": 115,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-14T13:44:22Z"
+    },
+    {
+      "name": "pretty-ms",
+      "html_url": "https://github.com/sindresorhus/pretty-ms",
+      "stargazers_count": 1219,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-14T05:32:22Z"
+    },
+    {
+      "name": "sqlite-data",
+      "html_url": "https://github.com/sindresorhus/sqlite-data",
+      "stargazers_count": 7,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2026-10-13T20:00:02Z"
+    },
+    {
+      "name": "decamelize",
+      "html_url": "https://github.com/sindresorhus/decamelize",
+      "stargazers_count": 247,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-13T19:07:34Z"
+    },
+    {
+      "name": "map-obj",
+      "html_url": "https://github.com/sindresorhus/map-obj",
+      "stargazers_count": 218,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-13T12:21:46Z"
+    },
+    {
+      "name": "clone-regexp",
+      "html_url": "https://github.com/sindresorhus/clone-regexp",
+      "stargazers_count": 24,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-13T06:38:18Z"
+    },
+    {
+      "name": "eslint-package-json",
+      "html_url": "https://github.com/sindresorhus/eslint-package-json",
+      "stargazers_count": 83,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-12T20:00:27Z"
+    },
+    {
+      "name": "electron-store",
+      "html_url": "https://github.com/sindresorhus/electron-store",
+      "stargazers_count": 5031,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-12T19:53:29Z"
+    },
+    {
+      "name": "conf",
+      "html_url": "https://github.com/sindresorhus/conf",
+      "stargazers_count": 1353,
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-12T17:27:44Z"
+    },
+    {
+      "name": "quickgpt-meta",
+      "html_url": "https://github.com/sindresorhus/quickgpt-meta",
+      "stargazers_count": 17,
+      "language": null,
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-12T13:58:53Z"
+    },
+    {
+      "name": "camelcase",
+      "html_url": "https://github.com/sindresorhus/camelcase",
+      "stargazers_count": 701,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-12T09:59:16Z"
+    },
+    {
+      "name": "p-map",
+      "html_url": "https://github.com/sindresorhus/p-map",
+      "stargazers_count": 1520,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-11T15:25:09Z"
+    },
+    {
+      "name": "DockProgress",
+      "html_url": "https://github.com/sindresorhus/DockProgress",
+      "stargazers_count": 1360,
+      "language": "Swift",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-10T09:17:51Z"
+    },
+    {
+      "name": "ky",
+      "html_url": "https://github.com/sindresorhus/ky",
+      "stargazers_count": 17180,
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-09T06:29:49Z"
+    },
+    {
+      "name": "del-cli",
+      "html_url": "https://github.com/sindresorhus/del-cli",
+      "stargazers_count": 333,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-09T03:58:55Z"
+    },
+    {
+      "name": "del",
+      "html_url": "https://github.com/sindresorhus/del",
+      "stargazers_count": 1346,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-08T17:34:43Z"
+    },
+    {
+      "name": "electron-better-ipc",
+      "html_url": "https://github.com/sindresorhus/electron-better-ipc",
+      "stargazers_count": 748,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-07T20:06:36Z"
+    },
+    {
+      "name": "filename-reserved-regex",
+      "html_url": "https://github.com/sindresorhus/filename-reserved-regex",
+      "stargazers_count": 53,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-07T18:02:48Z"
+    },
+    {
+      "name": "electron-reloader",
+      "html_url": "https://github.com/sindresorhus/electron-reloader",
+      "stargazers_count": 584,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-07T16:09:48Z"
+    },
+    {
+      "name": "electron-timber",
+      "html_url": "https://github.com/sindresorhus/electron-timber",
+      "stargazers_count": 423,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-07T16:02:43Z"
+    },
+    {
+      "name": "pure",
+      "html_url": "https://github.com/sindresorhus/pure",
+      "stargazers_count": 14467,
+      "language": "Shell",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-07T13:58:39Z"
+    },
+    {
+      "name": "pid-port",
+      "html_url": "https://github.com/sindresorhus/pid-port",
+      "stargazers_count": 151,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-06T08:44:36Z"
+    },
+    {
+      "name": "eslint-node-test",
+      "html_url": "https://github.com/sindresorhus/eslint-node-test",
+      "stargazers_count": 67,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-10-03T10:22:39Z"
+    },
+    {
+      "name": "wsl-utils",
+      "html_url": "https://github.com/sindresorhus/wsl-utils",
+      "stargazers_count": 75,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-09-30T05:08:04Z"
+    },
+    {
+      "name": "leven",
+      "html_url": "https://github.com/sindresorhus/leven",
+      "stargazers_count": 736,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-09-26T23:42:09Z"
+    },
+    {
+      "name": "matcher",
+      "html_url": "https://github.com/sindresorhus/matcher",
+      "stargazers_count": 542,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-09-26T21:22:41Z"
+    },
+    {
+      "name": "uint8array-extras",
+      "html_url": "https://github.com/sindresorhus/uint8array-extras",
+      "stargazers_count": 283,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-09-26T17:13:36Z"
+    },
+    {
+      "name": "finder-alias",
+      "html_url": "https://github.com/sindresorhus/finder-alias",
+      "stargazers_count": 31,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-09-26T13:01:12Z"
+    },
+    {
+      "name": "pretty-bytes",
+      "html_url": "https://github.com/sindresorhus/pretty-bytes",
+      "stargazers_count": 1319,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-09-26T11:13:43Z"
+    },
+    {
+      "name": "make-synchronous",
+      "html_url": "https://github.com/sindresorhus/make-synchronous",
+      "stargazers_count": 332,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-09-26T10:19:37Z"
+    },
+    {
+      "name": "sublime-autoprefixer",
+      "html_url": "https://github.com/sindresorhus/sublime-autoprefixer",
+      "stargazers_count": 664,
+      "language": "Python",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-09-26T06:35:32Z"
+    },
+    {
+      "name": "make-asynchronous",
+      "html_url": "https://github.com/sindresorhus/make-asynchronous",
+      "stargazers_count": 261,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-09-25T19:27:26Z"
+    },
+    {
+      "name": "import-fresh",
+      "html_url": "https://github.com/sindresorhus/import-fresh",
+      "stargazers_count": 283,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-09-25T18:25:09Z"
+    },
+    {
+      "name": "bundle-name",
+      "html_url": "https://github.com/sindresorhus/bundle-name",
+      "stargazers_count": 11,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-09-25T18:07:23Z"
+    },
+    {
+      "name": "unicorn-magic",
+      "html_url": "https://github.com/sindresorhus/unicorn-magic",
+      "stargazers_count": 56,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-09-24T02:54:43Z"
+    },
+    {
+      "name": "is-installed-globally",
+      "html_url": "https://github.com/sindresorhus/is-installed-globally",
+      "stargazers_count": 72,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-09-22T04:14:30Z"
+    },
+    {
+      "name": "lcid",
+      "html_url": "https://github.com/sindresorhus/lcid",
+      "stargazers_count": 39,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-09-22T03:10:20Z"
+    },
+    {
+      "name": "boxen",
+      "html_url": "https://github.com/sindresorhus/boxen",
+      "stargazers_count": 1678,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-09-21T21:56:04Z"
+    },
+    {
+      "name": "decamelize-keys",
+      "html_url": "https://github.com/sindresorhus/decamelize-keys",
+      "stargazers_count": 57,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-09-20T15:45:04Z"
+    },
+    {
+      "name": "camelcase-keys",
+      "html_url": "https://github.com/sindresorhus/camelcase-keys",
+      "stargazers_count": 758,
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-09-20T15:42:15Z"
+    },
+    {
+      "name": "electron-unhandled",
+      "html_url": "https://github.com/sindresorhus/electron-unhandled",
+      "stargazers_count": 465,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-09-20T14:24:19Z"
+    },
+    {
+      "name": "electron-debug",
+      "html_url": "https://github.com/sindresorhus/electron-debug",
+      "stargazers_count": 777,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-09-20T14:19:19Z"
+    }
+  ]
+}

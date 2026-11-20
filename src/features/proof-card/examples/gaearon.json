@@ -1,0 +1,914 @@
+{
+  "capturedAt": "2026-11-20T22:25:45Z",
+  "user": {
+    "login": "gaearon",
+    "name": "dan",
+    "avatar_url": "https://avatars.githubusercontent.com/u/810438?v=4",
+    "html_url": "https://github.com/gaearon",
+    "bio": null,
+    "public_repos": 303,
+    "created_at": "2011-05-25T18:18:31Z"
+  },
+  "repos": [
+    {
+      "name": "gonshor-birthday",
+      "html_url": "https://github.com/gaearon/gonshor-birthday",
+      "stargazers_count": 3,
+      "language": "Lean",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-19T18:54:31Z"
+    },
+    {
+      "name": "combinatorial-games",
+      "html_url": "https://github.com/gaearon/combinatorial-games",
+      "stargazers_count": 0,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2026-11-19T12:19:12Z"
+    },
+    {
+      "name": "conway-refinement",
+      "html_url": "https://github.com/gaearon/conway-refinement",
+      "stargazers_count": 57,
+      "language": "Lean",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-11-19T02:18:21Z"
+    },
+    {
+      "name": "react",
+      "html_url": "https://github.com/gaearon/react",
+      "stargazers_count": 87,
+      "language": "JavaScript",
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2026-11-09T08:39:11Z"
+    },
+    {
+      "name": "next.js",
+      "html_url": "https://github.com/gaearon/next.js",
+      "stargazers_count": 17,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2026-10-21T19:17:59Z"
+    },
+    {
+      "name": "overreacted.io",
+      "html_url": "https://github.com/gaearon/overreacted.io",
+      "stargazers_count": 7275,
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-09-18T20:38:22Z"
+    },
+    {
+      "name": "subverso",
+      "html_url": "https://github.com/gaearon/subverso",
+      "stargazers_count": 1,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2026-08-31T11:37:37Z"
+    },
+    {
+      "name": "next-cc-activity-problem",
+      "html_url": "https://github.com/gaearon/next-cc-activity-problem",
+      "stargazers_count": 3,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-07-09T21:07:49Z"
+    },
+    {
+      "name": "atproto",
+      "html_url": "https://github.com/gaearon/atproto",
+      "stargazers_count": 9,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2026-07-08T03:14:44Z"
+    },
+    {
+      "name": "atproto-website",
+      "html_url": "https://github.com/gaearon/atproto-website",
+      "stargazers_count": 2,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2026-07-08T03:14:34Z"
+    },
+    {
+      "name": "agent-browser",
+      "html_url": "https://github.com/gaearon/agent-browser",
+      "stargazers_count": 2,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2026-06-25T17:57:31Z"
+    },
+    {
+      "name": "turbopack-seal-bug",
+      "html_url": "https://github.com/gaearon/turbopack-seal-bug",
+      "stargazers_count": 3,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-06-16T19:52:30Z"
+    },
+    {
+      "name": "react-udv-bug",
+      "html_url": "https://github.com/gaearon/react-udv-bug",
+      "stargazers_count": 4,
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-03-24T01:04:13Z"
+    },
+    {
+      "name": "hono",
+      "html_url": "https://github.com/gaearon/hono",
+      "stargazers_count": 4,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2026-03-07T01:12:28Z"
+    },
+    {
+      "name": "mariozechner.at",
+      "html_url": "https://github.com/gaearon/mariozechner.at",
+      "stargazers_count": 2,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2026-01-13T13:00:56Z"
+    },
+    {
+      "name": "woodshed",
+      "html_url": "https://github.com/gaearon/woodshed",
+      "stargazers_count": 71,
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-01-13T02:17:59Z"
+    },
+    {
+      "name": "social-app",
+      "html_url": "https://github.com/gaearon/social-app",
+      "stargazers_count": 13,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2026-01-09T18:10:46Z"
+    },
+    {
+      "name": "rscexplorer",
+      "html_url": "https://github.com/gaearon/rscexplorer",
+      "stargazers_count": 1114,
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2026-01-05T15:06:33Z"
+    },
+    {
+      "name": "indigo",
+      "html_url": "https://github.com/gaearon/indigo",
+      "stargazers_count": 7,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2025-12-12T19:27:51Z"
+    },
+    {
+      "name": "next-bug-repro",
+      "html_url": "https://github.com/gaearon/next-bug-repro",
+      "stargazers_count": 5,
+      "language": "TypeScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2025-11-30T09:09:26Z"
+    },
+    {
+      "name": "lpm",
+      "html_url": "https://github.com/gaearon/lpm",
+      "stargazers_count": 1,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2025-10-10T12:15:16Z"
+    },
+    {
+      "name": "leaflet",
+      "html_url": "https://github.com/gaearon/leaflet",
+      "stargazers_count": 4,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2025-10-09T22:10:28Z"
+    },
+    {
+      "name": "statusphere-react",
+      "html_url": "https://github.com/gaearon/statusphere-react",
+      "stargazers_count": 3,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2025-09-30T19:16:34Z"
+    },
+    {
+      "name": "analysis-solutions",
+      "html_url": "https://github.com/gaearon/analysis-solutions",
+      "stargazers_count": 50,
+      "language": "Lean",
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2025-09-23T14:27:11Z"
+    },
+    {
+      "name": "lean-lsp-mcp",
+      "html_url": "https://github.com/gaearon/lean-lsp-mcp",
+      "stargazers_count": 5,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2025-07-05T01:51:09Z"
+    },
+    {
+      "name": "formalising-mathematics-notes",
+      "html_url": "https://github.com/gaearon/formalising-mathematics-notes",
+      "stargazers_count": 5,
+      "language": "Lean",
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2025-03-25T12:10:05Z"
+    },
+    {
+      "name": "mathematics_in_lean_source",
+      "html_url": "https://github.com/gaearon/mathematics_in_lean_source",
+      "stargazers_count": 2,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2025-02-01T23:32:38Z"
+    },
+    {
+      "name": "react-navigation",
+      "html_url": "https://github.com/gaearon/react-navigation",
+      "stargazers_count": 6,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2025-01-02T17:34:41Z"
+    },
+    {
+      "name": "react-native-image-crop-picker",
+      "html_url": "https://github.com/gaearon/react-native-image-crop-picker",
+      "stargazers_count": 4,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2024-12-19T21:47:38Z"
+    },
+    {
+      "name": "react-native-website",
+      "html_url": "https://github.com/gaearon/react-native-website",
+      "stargazers_count": 11,
+      "language": "JavaScript",
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2024-11-22T15:38:25Z"
+    },
+    {
+      "name": "react-native-reanimated",
+      "html_url": "https://github.com/gaearon/react-native-reanimated",
+      "stargazers_count": 8,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2024-11-22T14:21:08Z"
+    },
+    {
+      "name": "react-native",
+      "html_url": "https://github.com/gaearon/react-native",
+      "stargazers_count": 16,
+      "language": "Java",
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2024-11-22T14:18:32Z"
+    },
+    {
+      "name": "react-native-svg",
+      "html_url": "https://github.com/gaearon/react-native-svg",
+      "stargazers_count": 7,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2024-11-21T01:08:16Z"
+    },
+    {
+      "name": "metro",
+      "html_url": "https://github.com/gaearon/metro",
+      "stargazers_count": 8,
+      "language": "JavaScript",
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2024-11-17T18:08:49Z"
+    },
+    {
+      "name": "reanimated-repro-weird",
+      "html_url": "https://github.com/gaearon/reanimated-repro-weird",
+      "stargazers_count": 7,
+      "language": "Kotlin",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2024-11-08T18:28:56Z"
+    },
+    {
+      "name": "expo",
+      "html_url": "https://github.com/gaearon/expo",
+      "stargazers_count": 14,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2024-11-01T23:22:04Z"
+    },
+    {
+      "name": "rn-bug-loop",
+      "html_url": "https://github.com/gaearon/rn-bug-loop",
+      "stargazers_count": 5,
+      "language": "Kotlin",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2024-10-05T09:52:40Z"
+    },
+    {
+      "name": "ssr-performance-showdown",
+      "html_url": "https://github.com/gaearon/ssr-performance-showdown",
+      "stargazers_count": 5,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2024-08-28T11:02:25Z"
+    },
+    {
+      "name": "fastify-vite",
+      "html_url": "https://github.com/gaearon/fastify-vite",
+      "stargazers_count": 6,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2024-08-28T02:19:51Z"
+    },
+    {
+      "name": "formatjs",
+      "html_url": "https://github.com/gaearon/formatjs",
+      "stargazers_count": 12,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2024-08-03T02:51:59Z"
+    },
+    {
+      "name": "website",
+      "html_url": "https://github.com/gaearon/website",
+      "stargazers_count": 32,
+      "language": "JavaScript",
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2024-05-24T21:03:48Z"
+    },
+    {
+      "name": "cerebral",
+      "html_url": "https://github.com/gaearon/cerebral",
+      "stargazers_count": 7,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2024-05-19T14:05:10Z"
+    },
+    {
+      "name": "react-freeze",
+      "html_url": "https://github.com/gaearon/react-freeze",
+      "stargazers_count": 32,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2024-02-25T01:56:47Z"
+    },
+    {
+      "name": "next-react-server-components",
+      "html_url": "https://github.com/gaearon/next-react-server-components",
+      "stargazers_count": 13,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2023-05-03T18:23:39Z"
+    },
+    {
+      "name": "test.react.dev",
+      "html_url": "https://github.com/gaearon/test.react.dev",
+      "stargazers_count": 9,
+      "language": null,
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2023-04-28T22:42:43Z"
+    },
+    {
+      "name": "sandpack",
+      "html_url": "https://github.com/gaearon/sandpack",
+      "stargazers_count": 15,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2023-04-08T17:22:07Z"
+    },
+    {
+      "name": "simple-rsc",
+      "html_url": "https://github.com/gaearon/simple-rsc",
+      "stargazers_count": 3,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2023-03-31T14:37:18Z"
+    },
+    {
+      "name": "DefinitelyTyped",
+      "html_url": "https://github.com/gaearon/DefinitelyTyped",
+      "stargazers_count": 10,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2023-03-21T22:43:09Z"
+    },
+    {
+      "name": "babel.github.io",
+      "html_url": "https://github.com/gaearon/babel.github.io",
+      "stargazers_count": 9,
+      "language": "CSS",
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2023-03-17T14:37:57Z"
+    },
+    {
+      "name": "react-side-effect",
+      "html_url": "https://github.com/gaearon/react-side-effect",
+      "stargazers_count": 1214,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2023-03-04T04:00:16Z"
+    },
+    {
+      "name": "react-hot-loader",
+      "html_url": "https://github.com/gaearon/react-hot-loader",
+      "stargazers_count": 12149,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2023-02-10T02:42:07Z"
+    },
+    {
+      "name": "nextjs-appdir-embed-testing",
+      "html_url": "https://github.com/gaearon/nextjs-appdir-embed-testing",
+      "stargazers_count": 6,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2023-02-01T18:53:39Z"
+    },
+    {
+      "name": "react-deep-force-update",
+      "html_url": "https://github.com/gaearon/react-deep-force-update",
+      "stargazers_count": 120,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2023-01-11T18:47:09Z"
+    },
+    {
+      "name": "whatthefuck.is",
+      "html_url": "https://github.com/gaearon/whatthefuck.is",
+      "stargazers_count": 3032,
+      "language": "CSS",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2022-12-13T06:41:09Z"
+    },
+    {
+      "name": "DreamBerd",
+      "html_url": "https://github.com/gaearon/DreamBerd",
+      "stargazers_count": 4,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2022-11-30T23:13:06Z"
+    },
+    {
+      "name": "classnames",
+      "html_url": "https://github.com/gaearon/classnames",
+      "stargazers_count": 5,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2022-11-28T12:53:25Z"
+    },
+    {
+      "name": "gitbook-plugin-prism",
+      "html_url": "https://github.com/gaearon/gitbook-plugin-prism",
+      "stargazers_count": 89,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2022-11-06T16:30:26Z"
+    },
+    {
+      "name": "react-collapsed",
+      "html_url": "https://github.com/gaearon/react-collapsed",
+      "stargazers_count": 17,
+      "language": "TypeScript",
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2022-09-13T13:07:43Z"
+    },
+    {
+      "name": "sc-bug-repro",
+      "html_url": "https://github.com/gaearon/sc-bug-repro",
+      "stargazers_count": 15,
+      "language": "CSS",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2022-05-23T20:50:54Z"
+    },
+    {
+      "name": "ukraine-timemap",
+      "html_url": "https://github.com/gaearon/ukraine-timemap",
+      "stargazers_count": 69,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2022-04-06T00:55:43Z"
+    },
+    {
+      "name": "ssr-demo",
+      "html_url": "https://github.com/gaearon/ssr-demo",
+      "stargazers_count": 4,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2022-04-02T15:12:39Z"
+    },
+    {
+      "name": "ga-lite",
+      "html_url": "https://github.com/gaearon/ga-lite",
+      "stargazers_count": 3,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2022-02-18T04:44:09Z"
+    },
+    {
+      "name": "mdx",
+      "html_url": "https://github.com/gaearon/mdx",
+      "stargazers_count": 6,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2022-02-01T12:39:03Z"
+    },
+    {
+      "name": "firebase-js-sdk",
+      "html_url": "https://github.com/gaearon/firebase-js-sdk",
+      "stargazers_count": 4,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2021-11-16T21:19:16Z"
+    },
+    {
+      "name": "react-lag-radar",
+      "html_url": "https://github.com/gaearon/react-lag-radar",
+      "stargazers_count": 295,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2021-06-17T15:28:19Z"
+    },
+    {
+      "name": "platform-app",
+      "html_url": "https://github.com/gaearon/platform-app",
+      "stargazers_count": 4,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2021-06-17T15:01:25Z"
+    },
+    {
+      "name": "react-fractals",
+      "html_url": "https://github.com/gaearon/react-fractals",
+      "stargazers_count": 17,
+      "language": "JavaScript",
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2021-06-16T13:49:06Z"
+    },
+    {
+      "name": "eslint",
+      "html_url": "https://github.com/gaearon/eslint",
+      "stargazers_count": 9,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2021-03-02T19:51:26Z"
+    },
+    {
+      "name": "react-server-components-boilerplate",
+      "html_url": "https://github.com/gaearon/react-server-components-boilerplate",
+      "stargazers_count": 23,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2021-01-05T20:18:22Z"
+    },
+    {
+      "name": "suspense-experimental-github-demo",
+      "html_url": "https://github.com/gaearon/suspense-experimental-github-demo",
+      "stargazers_count": 795,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": true,
+      "pushed_at": "2020-12-28T22:21:14Z"
+    },
+    {
+      "name": "base16-js",
+      "html_url": "https://github.com/gaearon/base16-js",
+      "stargazers_count": 34,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2020-12-28T08:49:57Z"
+    },
+    {
+      "name": "react-proxy",
+      "html_url": "https://github.com/gaearon/react-proxy",
+      "stargazers_count": 452,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2020-09-04T21:33:19Z"
+    },
+    {
+      "name": "react-transform-boilerplate",
+      "html_url": "https://github.com/gaearon/react-transform-boilerplate",
+      "stargazers_count": 3325,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": true,
+      "pushed_at": "2020-08-21T15:47:58Z"
+    },
+    {
+      "name": "react-hot-boilerplate",
+      "html_url": "https://github.com/gaearon/react-hot-boilerplate",
+      "stargazers_count": 3877,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2020-08-21T15:47:32Z"
+    },
+    {
+      "name": "awesome-made-by-russians",
+      "html_url": "https://github.com/gaearon/awesome-made-by-russians",
+      "stargazers_count": 102,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2020-08-21T15:46:45Z"
+    },
+    {
+      "name": "podcast-player",
+      "html_url": "https://github.com/gaearon/podcast-player",
+      "stargazers_count": 19,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2020-07-31T22:14:19Z"
+    },
+    {
+      "name": "react-refresh-webpack-plugin",
+      "html_url": "https://github.com/gaearon/react-refresh-webpack-plugin",
+      "stargazers_count": 6,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2020-07-24T12:39:38Z"
+    },
+    {
+      "name": "redux-devtools-dock-monitor",
+      "html_url": "https://github.com/gaearon/redux-devtools-dock-monitor",
+      "stargazers_count": 401,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2020-06-24T18:43:06Z"
+    },
+    {
+      "name": "todos",
+      "html_url": "https://github.com/gaearon/todos",
+      "stargazers_count": 786,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2020-06-10T11:26:42Z"
+    },
+    {
+      "name": "web-audio-hooks-issue",
+      "html_url": "https://github.com/gaearon/web-audio-hooks-issue",
+      "stargazers_count": 3,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2020-04-27T03:12:32Z"
+    },
+    {
+      "name": "women-of-react-website",
+      "html_url": "https://github.com/gaearon/women-of-react-website",
+      "stargazers_count": 5,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2020-03-30T14:11:53Z"
+    },
+    {
+      "name": "selfdefined",
+      "html_url": "https://github.com/gaearon/selfdefined",
+      "stargazers_count": 7,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2020-02-14T13:53:37Z"
+    },
+    {
+      "name": "myapp",
+      "html_url": "https://github.com/gaearon/myapp",
+      "stargazers_count": 8,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2020-01-29T14:16:41Z"
+    },
+    {
+      "name": "floating-point-gui.de",
+      "html_url": "https://github.com/gaearon/floating-point-gui.de",
+      "stargazers_count": 3,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2020-01-23T22:51:28Z"
+    },
+    {
+      "name": "webpack.js.org",
+      "html_url": "https://github.com/gaearon/webpack.js.org",
+      "stargazers_count": 6,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2020-01-17T00:48:16Z"
+    },
+    {
+      "name": "docusaurus",
+      "html_url": "https://github.com/gaearon/docusaurus",
+      "stargazers_count": 7,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2020-01-07T16:54:05Z"
+    },
+    {
+      "name": "reactjs.org",
+      "html_url": "https://github.com/gaearon/reactjs.org",
+      "stargazers_count": 14,
+      "language": "JavaScript",
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2019-12-18T16:52:06Z"
+    },
+    {
+      "name": "redux-devtools-themes",
+      "html_url": "https://github.com/gaearon/redux-devtools-themes",
+      "stargazers_count": 35,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2019-11-06T18:14:55Z"
+    },
+    {
+      "name": "react-pure-render",
+      "html_url": "https://github.com/gaearon/react-pure-render",
+      "stargazers_count": 447,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2019-10-29T17:47:17Z"
+    },
+    {
+      "name": "react-document-title",
+      "html_url": "https://github.com/gaearon/react-document-title",
+      "stargazers_count": 1845,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2019-10-28T13:34:57Z"
+    },
+    {
+      "name": "babel-plugin-functional-hmr",
+      "html_url": "https://github.com/gaearon/babel-plugin-functional-hmr",
+      "stargazers_count": 7,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2019-10-14T14:06:39Z"
+    },
+    {
+      "name": "create-react-app",
+      "html_url": "https://github.com/gaearon/create-react-app",
+      "stargazers_count": 37,
+      "language": "JavaScript",
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2019-06-17T09:25:33Z"
+    },
+    {
+      "name": "react-devtools-experimental",
+      "html_url": "https://github.com/gaearon/react-devtools-experimental",
+      "stargazers_count": 6,
+      "language": "JavaScript",
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2019-06-12T16:59:19Z"
+    },
+    {
+      "name": "babel-handbook",
+      "html_url": "https://github.com/gaearon/babel-handbook",
+      "stargazers_count": 14,
+      "language": null,
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2019-05-15T03:06:47Z"
+    },
+    {
+      "name": "react-window",
+      "html_url": "https://github.com/gaearon/react-window",
+      "stargazers_count": 13,
+      "language": "JavaScript",
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2019-04-12T18:08:44Z"
+    },
+    {
+      "name": "subliminal",
+      "html_url": "https://github.com/gaearon/subliminal",
+      "stargazers_count": 622,
+      "language": null,
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2019-03-29T16:15:37Z"
+    },
+    {
+      "name": "hooks-perf-issues",
+      "html_url": "https://github.com/gaearon/hooks-perf-issues",
+      "stargazers_count": 14,
+      "language": "JavaScript",
+      "fork": false,
+      "archived": false,
+      "pushed_at": "2019-03-03T00:47:39Z"
+    },
+    {
+      "name": "redux-react-hook",
+      "html_url": "https://github.com/gaearon/redux-react-hook",
+      "stargazers_count": 25,
+      "language": "TypeScript",
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2019-02-05T15:51:16Z"
+    },
+    {
+      "name": "reactjsgirls-docs",
+      "html_url": "https://github.com/gaearon/reactjsgirls-docs",
+      "stargazers_count": 5,
+      "language": "JavaScript",
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2018-09-27T14:39:34Z"
+    },
+    {
+      "name": "codesandbox-client",
+      "html_url": "https://github.com/gaearon/codesandbox-client",
+      "stargazers_count": 4,
+      "language": "JavaScript",
+      "fork": true,
+      "archived": false,
+      "pushed_at": "2018-09-08T17:45:58Z"
+    }
+  ]
+}

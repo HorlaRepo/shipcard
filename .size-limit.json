@@ -1,7 +1,7 @@
 [
   {
     "name": "JavaScript on first load",
-    "path": "dist/assets/*.js",
+    "path": "dist/assets/index-*.js",
     "limit": "100 kB",
     "gzip": true
   }
