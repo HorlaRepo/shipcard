@@ -22,7 +22,9 @@
     "prepare": "husky",
     "knip": "knip",
     "size": "size-limit",
-    "check": "npm run lint && npm run format:check && npm run typecheck && npm run knip && npm test && npm run build && npm run size && npm audit --audit-level=high"
+    "check": "npm run lint && npm run format:check && npm run typecheck && npm run knip && npm test && npm run build && npm run size && npm audit --audit-level=high",
+    "dev:api": "npm run build && wrangler dev",
+    "deploy": "npm run build && wrangler deploy"
   },
   "dependencies": {
     "react": "^19.3.1",
@@ -55,6 +57,7 @@
     "typescript": "^7.0.2",
     "vite": "^8.3.8",
     "vitest": "^5.1.1",
-    "vitest-axe": "^0.1.0"
+    "vitest-axe": "^0.1.0",
+    "wrangler": "^4.166.0"
   }
 }

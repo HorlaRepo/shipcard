@@ -38,6 +38,11 @@ export default [
     },
   },
   {
+    files: ['worker/**/*.js'],
+    languageOptions: { globals: globals.serviceworker },
+    rules: { 'no-console': 'error', eqeqeq: ['error', 'always'] },
+  },
+  {
     files: ['*.config.js'],
     languageOptions: { globals: globals.node },
   },

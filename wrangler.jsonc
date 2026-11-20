@@ -1,0 +1,26 @@
+// Cloudflare Workers configuration (ADR 0012, ADR 0013).
+// One Worker serves the built page from static assets and handles /api/*.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "shipcard",
+  "main": "worker/index.js",
+  "compatibility_date": "2026-11-20",
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    // Unknown paths get index.html, so a shared ?u= link works from any path.
+    "not_found_handling": "single-page-application",
+    // Static files are served without running the Worker; only the API does.
+    "run_worker_first": ["/api/*"],
+  },
+  "kv_namespaces": [
+    {
+      "binding": "WAITLIST",
+      // An identifier, not a credential: it is useless without account access.
+      "id": "bd62bc078f9b42cd9c435742799e5f96",
+    },
+  ],
+  "observability": {
+    "enabled": true,
+  },
+}
