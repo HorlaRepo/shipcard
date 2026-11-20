@@ -56,6 +56,16 @@ describe('metadata', () => {
     expect(readFileSync('public/sitemap.xml', 'utf8')).toContain(`<loc>${canonical}</loc>`);
   });
 
+  test("each theme-color matches that theme's ground colour in tokens.css", () => {
+    const tokens = readFileSync('src/styles/tokens.css', 'utf8');
+    for (const scheme of ['light', 'dark']) {
+      const themeBlock = tokens.slice(tokens.indexOf(`color-scheme: ${scheme}`));
+      const ground = /--color-ground:\s*(#[0-9a-f]{6})/i.exec(themeBlock)?.[1];
+
+      expect(content(`meta[name="theme-color"][media*="${scheme}"]`)).toBe(ground);
+    }
+  });
+
   test('the document declares its language and names the product', () => {
     expect(page.documentElement.lang).toBe('en');
     expect(page.title).toContain(site.name);
