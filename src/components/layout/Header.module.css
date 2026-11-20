@@ -1,0 +1,64 @@
+@import '../../styles/breakpoints.css';
+
+.header {
+  position: sticky;
+  inset-block-start: 0;
+  z-index: var(--layer-header);
+  background-color: var(--color-ground);
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-5);
+  block-size: var(--header-height);
+}
+
+.wordmark {
+  display: inline-flex;
+  align-items: center;
+  min-block-size: var(--target-min);
+  font-size: var(--text-heading);
+  font-stretch: var(--width-condensed);
+  font-weight: var(--weight-black);
+  line-height: var(--leading-title);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav,
+.cta {
+  display: none;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.links {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  min-block-size: var(--target-min);
+  padding-inline: var(--space-3);
+  font-weight: var(--weight-medium);
+  text-decoration: none;
+}
+
+@media (--from-md) {
+  .nav,
+  .cta {
+    display: block;
+  }
+
+  .nav {
+    margin-inline-start: auto;
+  }
+}

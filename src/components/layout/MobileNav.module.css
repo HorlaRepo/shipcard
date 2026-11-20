@@ -1,0 +1,57 @@
+@import '../../styles/breakpoints.css';
+
+.trigger {
+  display: inline-grid;
+  place-items: center;
+  inline-size: var(--target-min);
+  block-size: var(--target-min);
+  border: var(--rule-width) solid var(--color-control);
+  border-radius: var(--radius-md);
+  background-color: var(--color-surface);
+  font-size: var(--text-lead);
+}
+
+.dialog {
+  position: fixed;
+  inset: 0;
+  z-index: var(--layer-dialog);
+  overflow-y: auto;
+  background-color: var(--color-ground);
+}
+
+.dialog[hidden] {
+  display: none;
+}
+
+.panel {
+  display: grid;
+  gap: var(--space-5);
+  padding: var(--space-3) var(--gutter) var(--space-7);
+}
+
+.panel > .trigger {
+  justify-self: end;
+}
+
+.links {
+  border-block-start: var(--rule-strong) solid var(--color-ink);
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  min-block-size: var(--space-8);
+  border-block-end: var(--rule-width) solid var(--color-rule);
+  font-size: var(--text-title);
+  font-stretch: var(--width-condensed);
+  font-weight: var(--weight-black);
+  line-height: var(--leading-title);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media (--from-md) {
+  .root {
+    display: none;
+  }
+}
