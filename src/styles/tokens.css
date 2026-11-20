@@ -6,12 +6,6 @@
  * The inline script in index.html sets data-theme before first paint.
  */
 
-/* Breakpoints, mobile-first. Custom properties cannot be used in media
-   queries, so these are custom media (compiled by Lightning CSS). */
-@custom-media --from-sm (min-width: 40rem);
-@custom-media --from-md (min-width: 60rem);
-@custom-media --from-lg (min-width: 80rem);
-
 :root {
   /* Type families */
   --font-sans: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
@@ -46,6 +40,9 @@
 
   --tracking-caption: 0.06em;
   --measure: 65ch;
+  --measure-title: 16ch;
+  --measure-title-wide: 24ch;
+  --measure-note: 44ch;
 
   /* Spacing */
   --space-1: 0.25rem;
@@ -72,6 +69,9 @@
   --radius-md: 4px;
   --rule-width: 1px;
   --rule-strong: 2px;
+  --icon-size: 1.25em;
+  --icon-stroke: 1.5;
+  --marker-bleed: 0.12em;
 
   /* Motion */
   --duration-fast: 120ms;

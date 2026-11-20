@@ -1,0 +1,45 @@
+@import '../../styles/breakpoints.css';
+
+.section {
+  padding-block-end: var(--section-gap);
+}
+
+.inner {
+  display: grid;
+  gap: var(--space-6);
+  padding-block-start: var(--space-5);
+  border-block-start: var(--rule-strong) solid var(--color-ink);
+}
+
+.title {
+  max-inline-size: var(--measure-title);
+  font-size: var(--text-title);
+  font-stretch: var(--width-condensed);
+  font-weight: var(--weight-black);
+  line-height: var(--leading-title);
+  text-transform: uppercase;
+  text-wrap: balance;
+}
+
+.stacked .title {
+  max-inline-size: var(--measure-title-wide);
+}
+
+.lead {
+  max-inline-size: var(--measure);
+  margin-block-start: var(--space-4);
+  color: var(--color-ink-muted);
+  font-size: var(--text-lead);
+  line-height: var(--leading-snug);
+}
+
+@media (--from-md) {
+  .split {
+    grid-template-columns: minmax(0, 4fr) minmax(0, 8fr);
+    gap: var(--space-7);
+  }
+
+  .stacked {
+    gap: var(--space-7);
+  }
+}
