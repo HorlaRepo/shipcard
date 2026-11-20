@@ -1,6 +1,6 @@
 # 0008. Waitlist submits to a hosted form provider behind `submitWaitlist()`
 
-- Status: Accepted
+- Status: Superseded by 0013
 - Date: 2026-11-20
 
 ## Context
@@ -24,4 +24,4 @@ A server and a database for sign-ups. Rejected as out of scope for a landing pag
 ## Consequences
 - Positive: real behaviour; a swappable provider.
 - Negative / trade-offs: depends on a third-party account and its free-tier limits; the provider's origin has to be allowed in the Content-Security-Policy; submissions live in someone else's dashboard.
-- Revisit if: the host changes or the provider's limits bite.
+- Revisit if: the host changes or the provider's limits bite. This happened: see 0013, which keeps the `submitWaitlist()` boundary and replaces the provider.
