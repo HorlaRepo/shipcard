@@ -1,0 +1,142 @@
+/*
+ * Design tokens. Every value in docs/DESIGN.md has a token here, and component
+ * CSS takes its values from this file only.
+ *
+ * Themes swap token values on [data-theme]; components never branch on theme.
+ * The inline script in index.html sets data-theme before first paint.
+ */
+
+/* Breakpoints, mobile-first. Custom properties cannot be used in media
+   queries, so these are custom media (compiled by Lightning CSS). */
+@custom-media --from-sm (min-width: 40rem);
+@custom-media --from-md (min-width: 60rem);
+@custom-media --from-lg (min-width: 80rem);
+
+:root {
+  /* Type families */
+  --font-sans: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+
+  /* Archivo's width axis: 62 is the condensed display voice. */
+  --width-condensed: 62%;
+  --width-narrow: 75%;
+  --width-normal: 100%;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-bold: 700;
+  --weight-black: 800;
+
+  /* Type sizes */
+  --text-display: clamp(2.75rem, 1.2rem + 7.6vw, 6rem);
+  --text-title: clamp(2rem, 1.4rem + 2.9vw, 3.5rem);
+  --text-figure: clamp(1.75rem, 1.5rem + 1.2vw, 2.5rem);
+  --text-heading: clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem);
+  --text-lead: clamp(1.0625rem, 1rem + 0.4vw, 1.25rem);
+  --text-body: 1rem;
+  --text-small: 0.875rem;
+  --text-data: 0.875rem;
+  --text-caption: 0.75rem;
+
+  --leading-display: 0.92;
+  --leading-title: 1;
+  --leading-heading: 1.15;
+  --leading-body: 1.6;
+  --leading-snug: 1.5;
+
+  --tracking-caption: 0.06em;
+  --measure: 65ch;
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+  --space-10: 8rem;
+
+  /* Layout */
+  --container-max: 72rem;
+  --gutter: clamp(1rem, 4vw, 2.5rem);
+  --section-gap: clamp(4rem, 2rem + 8vw, 8rem);
+  --header-height: 4rem;
+  --target-min: 2.75rem;
+  --card-width: 24rem;
+
+  /* Shape */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --rule-width: 1px;
+  --rule-strong: 2px;
+
+  /* Motion */
+  --duration-fast: 120ms;
+  --duration-base: 200ms;
+  --duration-slow: 320ms;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --reveal-distance: 0.75rem;
+  --press-scale: 0.97;
+
+  /* Stacking */
+  --layer-header: 10;
+  --layer-dialog: 20;
+  --layer-skip-link: 30;
+}
+
+/* Light theme (default) */
+:root,
+[data-theme='light'] {
+  color-scheme: light;
+
+  --color-ground: #edeae3;
+  --color-surface: #ffffff;
+  --color-ink: #15140f;
+  --color-ink-muted: #55524a;
+  --color-control: #77736a;
+  --color-rule: #c9c5ba;
+  --color-accent: #ffd500;
+  --color-on-accent: #15140f;
+  --color-accent-edge: #15140f;
+  --color-focus: #15140f;
+  --color-danger: #a3231c;
+  --color-success: #1b6435;
+  --color-scrim: rgb(21 20 15 / 0.5);
+
+  --shadow-label: 0 1px 2px rgb(21 20 15 / 0.08), 0 16px 32px -12px rgb(21 20 15 / 0.28);
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
+
+  --color-ground: #11110e;
+  --color-surface: #1c1b17;
+  --color-ink: #f2efe7;
+  --color-ink-muted: #a9a599;
+  --color-control: #8d897d;
+  --color-rule: #34322b;
+  --color-accent: #ffd500;
+  --color-on-accent: #15140f;
+  --color-accent-edge: #ffd500;
+  --color-focus: #ffd500;
+  --color-danger: #ff9388;
+  --color-success: #7fd6a0;
+  --color-scrim: rgb(0 0 0 / 0.64);
+
+  --shadow-label: 0 1px 2px rgb(0 0 0 / 0.4), 0 16px 32px -12px rgb(0 0 0 / 0.7);
+}
+
+/* Derived from the theme tokens above, so they follow the theme without being
+   redefined per theme. The language bar's ramp is ink mixed into the surface. */
+:root,
+[data-theme] {
+  --color-ramp-1: var(--color-ink);
+  --color-ramp-2: color-mix(in srgb, var(--color-ink) 72%, var(--color-surface));
+  --color-ramp-3: color-mix(in srgb, var(--color-ink) 52%, var(--color-surface));
+  --color-ramp-4: color-mix(in srgb, var(--color-ink) 36%, var(--color-surface));
+  --color-ramp-5: color-mix(in srgb, var(--color-ink) 22%, var(--color-surface));
+}
