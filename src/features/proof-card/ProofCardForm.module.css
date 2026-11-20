@@ -45,9 +45,13 @@
   font-weight: var(--weight-medium);
 }
 
-.problem:empty,
-.quota:empty {
+.problem:empty {
   display: none;
+}
+
+/* Kept in the accessibility tree while empty, so its first message is announced. */
+.quota:empty {
+  margin-block-start: 0;
 }
 
 .examples {
