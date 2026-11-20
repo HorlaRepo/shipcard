@@ -20,22 +20,25 @@ import Hero from '../sections/Hero.jsx';
 import HowItWorks from '../sections/HowItWorks.jsx';
 import Pricing from '../sections/Pricing.jsx';
 import Waitlist from '../sections/Waitlist.jsx';
+import ThemeProvider from './providers/ThemeProvider.jsx';
 
-/** Root component: composes the page from its sections and hands each its copy. */
+/** Root component: provides the theme, composes the page from its sections and hands each its copy. */
 export default function App() {
   return (
-    <div id={site.topId}>
-      <SkipLink label={skipLink.label} targetId={site.mainId} />
-      <Header siteName={site.name} homeHref={`#${site.topId}`} navigation={navigation} />
-      <main id={site.mainId}>
-        <Hero content={hero} demoContent={proofCard} />
-        <HowItWorks content={howItWorks} />
-        <Features content={features} />
-        <Pricing content={pricing} />
-        <Faq content={faq} />
-        <Waitlist content={waitlist} />
-      </main>
-      <Footer siteName={site.name} content={footer} />
-    </div>
+    <ThemeProvider>
+      <div id={site.topId}>
+        <SkipLink label={skipLink.label} targetId={site.mainId} />
+        <Header siteName={site.name} homeHref={`#${site.topId}`} navigation={navigation} />
+        <main id={site.mainId}>
+          <Hero content={hero} demoContent={proofCard} />
+          <HowItWorks content={howItWorks} />
+          <Features content={features} />
+          <Pricing content={pricing} />
+          <Faq content={faq} />
+          <Waitlist content={waitlist} />
+        </main>
+        <Footer siteName={site.name} content={footer} />
+      </div>
+    </ThemeProvider>
   );
 }

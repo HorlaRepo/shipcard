@@ -38,6 +38,10 @@ export const navigation = {
     { label: 'FAQ', href: `#${sectionIds.faq}` },
   ],
   cta: { label: 'Join the waitlist', href: `#${sectionIds.waitlist}` },
+  theme: {
+    toDark: 'Switch to the dark theme',
+    toLight: 'Switch to the light theme',
+  },
   menu: {
     openLabel: 'Open menu',
     closeLabel: 'Close menu',
@@ -169,6 +173,15 @@ export const pricing = {
   title: 'Free to make a card. Paid when you need more.',
   lead: `Prices are in US dollars. ${NAME} is a demo project, so nothing here can be bought yet.`,
   currency: 'USD',
+  billing: {
+    legend: 'Billing period',
+    monthly: 'Monthly',
+    annual: 'Annual',
+    annualNote: 'save 25%',
+    billedMonthly: 'Billed every month',
+    billedAnnually: 'Billed as {total} once a year',
+    free: 'Free for good',
+  },
   perMonth: 'per month',
   perSeatPerMonth: 'per seat, per month',
   recommendedLabel: 'The one for a job search',

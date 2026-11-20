@@ -1,10 +1,30 @@
 @import '../../styles/breakpoints.css';
 
+/* Zero-height marker at the very top of the page; see Header.jsx. */
+.sentinel {
+  block-size: 0;
+}
+
 .header {
   position: sticky;
   inset-block-start: 0;
   z-index: var(--layer-header);
   background-color: var(--color-ground);
+}
+
+/* The hairline that appears once the page has scrolled. */
+.header::after {
+  position: absolute;
+  inset-inline: 0;
+  inset-block-end: 0;
+  border-block-end: var(--rule-width) solid var(--color-rule);
+  content: '';
+  opacity: 0;
+  transition: opacity var(--duration-base) var(--ease-out);
+}
+
+.header[data-scrolled='true']::after {
+  opacity: 1;
 }
 
 .bar {
@@ -25,6 +45,12 @@
   line-height: var(--leading-title);
   text-decoration: none;
   text-transform: uppercase;
+  transform-origin: left center;
+  transition: transform var(--duration-base) var(--ease-out);
+}
+
+.header[data-scrolled='true'] .wordmark {
+  transform: scale(var(--shrink-scale));
 }
 
 .nav,
@@ -50,6 +76,21 @@
   padding-inline: var(--space-3);
   font-weight: var(--weight-medium);
   text-decoration: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .link:hover {
+    text-decoration: underline;
+    text-decoration-thickness: var(--rule-width);
+    text-underline-offset: var(--underline-offset);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header::after,
+  .wordmark {
+    transition: none;
+  }
 }
 
 @media (--from-md) {
