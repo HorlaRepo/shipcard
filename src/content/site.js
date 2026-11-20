@@ -124,7 +124,7 @@ export const proofCard = {
 
 export const howItWorks = {
   id: sectionIds.howItWorks,
-  title: 'From username to proof in three steps',
+  title: 'From username to proof in 3 steps',
   steps: [
     {
       title: 'Type a username',

@@ -27,7 +27,7 @@
 
 .lead {
   max-inline-size: var(--measure);
-  margin-block-start: var(--space-5);
+  margin-block-end: var(--space-6);
   font-size: var(--text-lead);
   line-height: var(--leading-snug);
 }

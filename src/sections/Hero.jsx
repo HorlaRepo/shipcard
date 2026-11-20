@@ -12,7 +12,7 @@ import styles from './Hero.module.css';
 
 /**
  * The opening of the page: the promise as the page's only h1, then the live
- * demo that proves it.
+ * demo that proves it. The lead paragraph sits above the form, beside the card.
  *
  * @param {object} props
  * @param {HeroContent} props.content
@@ -30,8 +30,10 @@ export default function Hero({ content, demoContent }) {
             {content.title.closing} <mark className={styles.marked}>{content.title.marked}</mark>
           </span>
         </h1>
-        <p className={styles.lead}>{content.lead}</p>
-        <ProofCardDemo content={demoContent} />
+        <ProofCardDemo
+          content={demoContent}
+          intro={<p className={styles.lead}>{content.lead}</p>}
+        />
       </Container>
     </section>
   );

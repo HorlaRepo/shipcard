@@ -44,6 +44,11 @@ body {
   outline-offset: var(--rule-strong);
 }
 
+/* Paragraphs avoid a lone last word where the browser supports it. */
+p {
+  text-wrap: pretty;
+}
+
 a {
   text-decoration-thickness: var(--rule-width);
   text-underline-offset: var(--underline-offset);

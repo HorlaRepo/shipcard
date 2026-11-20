@@ -58,9 +58,11 @@ function describeError(error, content) {
  * The live demo and the feature's only public component: a username form and
  * the card it produces, in every state.
  *
- * @param {{ content: ProofCardContent }} props
+ * @param {object} props
+ * @param {ProofCardContent} props.content
+ * @param {import('react').ReactNode} [props.intro] Shown above the form, beside the card.
  */
-export default function ProofCardDemo({ content }) {
+export default function ProofCardDemo({ content, intro }) {
   const [urlUsername, setUrlUsername] = useUrlParam(USERNAME_PARAM);
   const initialUsername = parseUsername(urlUsername ?? '').username;
   const { state, submit, openSnapshot, reset } = useGithubProfile({ initialUsername });
@@ -141,18 +143,21 @@ export default function ProofCardDemo({ content }) {
 
   return (
     <div className={styles.demo}>
-      <ProofCardForm
-        content={content.form}
-        examples={EXAMPLE_USERNAMES}
-        initialValue={initialUsername ?? ''}
-        lookupProblem={
-          isNotFound
-            ? fillTemplate(content.form.problems.notFound, { username: state.username })
-            : null
-        }
-        quota={state.quota}
-        onSubmit={submit}
-      />
+      <div>
+        {intro}
+        <ProofCardForm
+          content={content.form}
+          examples={EXAMPLE_USERNAMES}
+          initialValue={initialUsername ?? ''}
+          lookupProblem={
+            isNotFound
+              ? fillTemplate(content.form.problems.notFound, { username: state.username })
+              : null
+          }
+          quota={state.quota}
+          onSubmit={submit}
+        />
+      </div>
       <div className={styles.result} aria-live="polite" aria-busy={state.status === 'loading'}>
         <ProofCardErrorBoundary
           fallback={<ProofCardNotice {...frame} message={content.errors.render} />}
