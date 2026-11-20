@@ -55,6 +55,69 @@ export const hero = {
   lead: `${NAME} turns a GitHub username into a proof-of-work card: what you have built, what you build with, and when you last shipped. Try it on any public account.`,
 };
 
+export const proofCard = {
+  productName: NAME,
+  form: {
+    label: 'GitHub username',
+    hint: 'A username, an @handle or a profile link.',
+    submit: 'Generate my card',
+    examplesLabel: 'Or try one',
+    quotaHint: 'Live lookups left this hour on your network: {count}.',
+    problems: {
+      empty: 'Type a GitHub username first.',
+      invalid:
+        'That is not a valid GitHub username. Use letters, numbers and single hyphens, up to 39 characters.',
+      notFound: 'No GitHub user called @{username}. Check the spelling and try again.',
+    },
+  },
+  empty: {
+    title: 'Your card prints here',
+    body: 'Type a username to build it from live GitHub data.',
+  },
+  loading: 'Building the card for @{username}',
+  errors: {
+    rateLimit:
+      'GitHub’s limit for this network resets at {time}. Open a saved example card in the meantime.',
+    rateLimitUnknown:
+      'GitHub is throttling requests from this network. Try again in a minute, or open a saved example card.',
+    timeout: 'GitHub took longer than {seconds} seconds to answer.',
+    offline: 'You appear to be offline. Reconnect, then try again.',
+    network: 'We could not reach GitHub. Check your connection, then try again.',
+    upstream: 'GitHub sent back something we could not read. Try again in a moment.',
+    render: 'This card could not be drawn. Reload the page to try again.',
+    retry: 'Try again',
+    examplesLabel: 'Saved example cards',
+  },
+  card: {
+    kind: 'Proof of work',
+    captions: {
+      repos: 'Repos',
+      stars: 'Stars',
+      age: 'Age',
+      languages: 'Top languages',
+      topRepos: 'Most starred',
+      lastShipped: 'Last shipped',
+    },
+    ageUnits: { year: '{value} yr', month: '{value} mo', day: '{value} d' },
+    starsSuffix: 'stars',
+    noLanguages: 'No languages detected yet.',
+    noRepos: 'No original public repositories yet.',
+    neverShipped: 'Nothing pushed yet',
+    countingRule: 'Forks and archived repositories are not counted.',
+    partialRule:
+      'Counts the 100 most recently pushed repositories, without forks or archived ones.',
+    snapshot: 'Snapshot from {date}',
+    profileLink: 'View @{login} on GitHub',
+  },
+  actions: {
+    copyLink: 'Copy link',
+    copied: 'Link copied',
+    copyFailed: 'Copy failed',
+    copyFailedDetail: 'The link could not be copied. It is in your address bar.',
+    clear: 'Clear',
+  },
+};
+
 export const howItWorks = {
   id: sectionIds.howItWorks,
   title: 'From username to proof in three steps',

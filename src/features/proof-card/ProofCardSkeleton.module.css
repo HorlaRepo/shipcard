@@ -1,0 +1,53 @@
+.skeleton {
+  display: grid;
+  flex: 1;
+  align-content: space-between;
+  gap: var(--space-5);
+  padding: var(--space-5);
+}
+
+.identity {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.lines,
+.rows {
+  display: grid;
+  flex: 1;
+  gap: var(--space-3);
+}
+
+.figures {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+
+.avatar,
+.line,
+.lineShort,
+.block {
+  border-radius: var(--radius-sm);
+  background-color: var(--color-ground);
+}
+
+.avatar {
+  flex: none;
+  inline-size: var(--avatar-size);
+  block-size: var(--avatar-size);
+}
+
+.line,
+.lineShort {
+  block-size: var(--space-4);
+}
+
+.lineShort {
+  inline-size: 50%;
+}
+
+.block {
+  block-size: var(--space-8);
+}

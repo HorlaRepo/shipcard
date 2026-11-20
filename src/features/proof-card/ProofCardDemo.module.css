@@ -1,0 +1,29 @@
+@import '../../styles/breakpoints.css';
+
+.demo {
+  display: grid;
+  gap: var(--space-7);
+  margin-block-start: var(--space-7);
+}
+
+/* Reserves the card and its actions, so no state changes the page's height. */
+.result {
+  display: grid;
+  align-content: start;
+  gap: var(--space-4);
+  min-block-size: calc(var(--card-height) + var(--target-min) + var(--space-4));
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+@media (--from-md) {
+  .demo {
+    grid-template-columns: minmax(0, 1fr) var(--card-width);
+    gap: var(--space-8);
+    align-items: start;
+  }
+}
