@@ -4,15 +4,15 @@ Updated at the end of every session. Read it at the start of the next one, after
 
 ## Phases
 
-| Phase | Scope                                       | Status      |
-| ----- | ------------------------------------------- | ----------- |
-| 0     | Foundation: toolchain, CI, decision records | Done        |
-| 1     | Design direction: `DESIGN.md`, tokens       | Done        |
-| 2     | Layout and static sections                  | Done        |
-| 3     | Proof-card feature                          | Done        |
-| 4     | Interactions and theme                      | Done        |
-| 5     | Audits and polish                           | Done        |
-| 6     | Docs and delivery                           | Not started |
+| Phase | Scope                                       | Status |
+| ----- | ------------------------------------------- | ------ |
+| 0     | Foundation: toolchain, CI, decision records | Done   |
+| 1     | Design direction: `DESIGN.md`, tokens       | Done   |
+| 2     | Layout and static sections                  | Done   |
+| 3     | Proof-card feature                          | Done   |
+| 4     | Interactions and theme                      | Done   |
+| 5     | Audits and polish                           | Done   |
+| 6     | Docs and delivery                           | Done   |
 
 ## Done
 
@@ -51,18 +51,46 @@ Audits were run one at a time, in the brief's order, and each was triaged before
 | 19  | Impeccable polish           | The hero's lead paragraph pushed the demo below the first screen on laptops and left the form column half empty       | Should         | Fixed: the lead sits above the form, beside the card                                                                               |
 | 20  | Impeccable polish           | Paragraphs could end on a single short word                                                                           | Should         | Fixed: `text-wrap: pretty`                                                                                                         |
 
+- Phase 6: README in the brief's section order with measured scores; demo GIF; licence; final review of the decision records; production deploy.
+
 ## In progress
 
-Nothing.
+Nothing. The build is complete and handed over for the SwapLearn submission, which Francis makes.
 
-## Next
+## Definition of done
 
-- Phase 6: README (in the brief's section order, with the decisions table and measured Lighthouse scores), the demo GIF, a final review of the decision records, the production deploy and the Definition of done checklist.
+Checked on 21 November 2026 against the final commit and https://shipcard.fran64biz.workers.dev.
+
+| Item                                                                                               | Result                                                                                                                                                                                                                           |
+| -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `npm run check` passes locally and CI is green                                                     | Yes                                                                                                                                                                                                                              |
+| Zero ESLint warnings, type errors, and high or critical `npm audit` issues                         | Yes                                                                                                                                                                                                                              |
+| Every test in the brief's testing table exists and passes; zero axe violations in both themes      | Yes: 249 tests; axe also run in Chrome on the deployed page, both themes, 390 and 1280 px                                                                                                                                        |
+| Lighthouse mobile on the deployed URL                                                              | 100 / 100 / 100 / 100 in both themes, three runs each (LCP 0.8 s, CLS 0)                                                                                                                                                         |
+| JavaScript within the 100 kB gzipped budget                                                        | 83.5 kB on first load                                                                                                                                                                                                            |
+| Every proof-card state checked by eye on mobile and desktop                                        | Yes: idle, loading, success, not found, hourly limit with examples, secondary limit, timeout, network, upstream, at 390 and 1280 px                                                                                              |
+| Keyboard-only walkthrough; screen reader announcements                                             | Keyboard: yes, in tests and by a scripted Tab walk of the deployed page. Announcements: verified through roles, live regions and accessible names in tests and axe. **Not verified with a real screen reader** (see limitations) |
+| No layout shift on card load; no theme flash on reload                                             | Yes: the result region measures the same in every state; CLS 0; the theme is set by an inline script before paint                                                                                                                |
+| Every decision has an ADR or a log row; the README links them                                      | Yes: 14 ADRs, 51 log rows                                                                                                                                                                                                        |
+| No placeholder copy, dead code, unused files or dependencies, `console` calls or fake social proof | Yes: knip is clean; the one console call is the guarded development log (L-15)                                                                                                                                                   |
+| README complete in the specified order, with live link and GIF                                     | Yes                                                                                                                                                                                                                              |
+| Commit history is atomic and conventional                                                          | Yes: every change reached `main` through a pull request, merged by rebase                                                                                                                                                        |
+
+## Known limitations
+
+- **Not tested with a real screen reader.** VoiceOver or NVDA was not run by a person. The semantics are covered by tests and axe, which is strong evidence but not the same thing. Worth ten minutes before submission.
+- **Totals stop at 100 repositories** (ADR 0006). Accounts with more have understated stars and languages; the card says so.
+- **About 30 lookups an hour per network**, GitHub's unauthenticated limit. The cache and three example cards soften it.
+- **No content without JavaScript** beyond a `<noscript>` message (ADR 0014).
+- **Waitlist addresses are unverified**, and the endpoint has no rate limiting of its own (L-29).
+- **Deploys are manual** (`npm run deploy` from `main`); CI holds no Cloudflare credentials (L-45).
+- **The demo GIF was recorded against the deployed page with GitHub's responses replayed from the saved torvalds snapshot**, so recording did not spend the hourly allowance. The data shown is real, captured on 20 November 2026.
+- **The address is a `workers.dev` subdomain.** A custom domain means editing `index.html`, `robots.txt` and `sitemap.xml`; a test keeps the three in agreement.
+- **Impeccable's launcher and detector were not run** (L-01, L-51); its guidance was applied from its reference files.
 
 ## Open issues
 
-- First-load JavaScript is 83 KB gzipped of the 100 KB budget (React and React DOM are 68 KB of that).
-- Totals are computed from the 100 most recently pushed repositories (ADR 0006); the card says so when an account has more.
+None blocking.
 
 ## Blockers
 
