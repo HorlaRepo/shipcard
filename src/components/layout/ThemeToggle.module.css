@@ -1,0 +1,27 @@
+.toggle {
+  display: inline-grid;
+  place-items: center;
+  inline-size: var(--target-min);
+  block-size: var(--target-min);
+  border: var(--rule-width) solid var(--color-control);
+  border-radius: var(--radius-md);
+  background-color: var(--color-surface);
+  font-size: var(--text-lead);
+  transition: transform var(--duration-fast) var(--ease-out);
+}
+
+.toggle:active {
+  transform: scale(var(--press-scale));
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .toggle:hover {
+    border-color: var(--color-ink);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .toggle {
+    transition: none;
+  }
+}
