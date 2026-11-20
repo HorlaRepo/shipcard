@@ -46,7 +46,7 @@ body {
 
 a {
   text-decoration-thickness: var(--rule-width);
-  text-underline-offset: 0.2em;
+  text-underline-offset: var(--underline-offset);
 }
 
 input {
