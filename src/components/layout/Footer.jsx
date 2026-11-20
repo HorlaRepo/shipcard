@@ -20,7 +20,9 @@ export default function Footer({ siteName, content }) {
       <Container>
         <div className={styles.inner}>
           <div>
-            <p className={styles.wordmark}>{siteName}</p>
+            <p className={styles.wordmark} translate="no">
+              {siteName}
+            </p>
             <p className={styles.note}>{content.note}</p>
           </div>
 

@@ -37,7 +37,12 @@ export default function Header({ siteName, homeHref, navigation }) {
       <header className={styles.header} data-scrolled={!isAtTop}>
         <Container>
           <div className={styles.bar}>
-            <a className={styles.wordmark} href={homeHref} aria-label={navigation.homeLabel}>
+            <a
+              className={styles.wordmark}
+              href={homeHref}
+              aria-label={navigation.homeLabel}
+              translate="no"
+            >
               {siteName}
             </a>
 

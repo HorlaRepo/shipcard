@@ -70,7 +70,7 @@ export default function ProofCard({ profile, productName, content }) {
             <h2 id="proof-card-name" className={styles.name}>
               {profile.name}
             </h2>
-            <p className={styles.handle}>
+            <p className={styles.handle} translate="no">
               <a
                 href={profile.profileUrl}
                 rel="noopener noreferrer"
@@ -110,7 +110,12 @@ export default function ProofCard({ profile, productName, content }) {
             <ol className={styles.repos}>
               {profile.topRepos.map((repo) => (
                 <li key={repo.name} className={styles.repo}>
-                  <a className={styles.repoName} href={repo.url} rel="noopener noreferrer">
+                  <a
+                    className={styles.repoName}
+                    href={repo.url}
+                    rel="noopener noreferrer"
+                    translate="no"
+                  >
                     {repo.name}
                   </a>
                   <span className={styles.stars}>

@@ -78,7 +78,7 @@ export const proofCard = {
     title: 'Your card prints here',
     body: 'Type a username to build it from live GitHub data.',
   },
-  loading: 'Building the card for @{username}',
+  loading: 'Building the card for @{username}…',
   errors: {
     rateLimit:
       'GitHub’s limit for this network resets at {time}. Open a saved example card in the meantime.',
@@ -285,7 +285,7 @@ export const waitlist = {
     label: 'Email address',
     hint: 'We store this address and nothing else.',
     submit: 'Join the waitlist',
-    submitting: 'Joining',
+    submitting: 'Joining…',
     honeypotLabel: 'Leave this field empty',
     success: 'You are on the list. We will write to {email} once, when paid plans open.',
     problems: {

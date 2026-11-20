@@ -87,6 +87,9 @@
         document.documentElement.dataset.theme = theme;
       })();
     </script>
+    <!-- The demo calls GitHub on the first lookup; open those connections early. -->
+    <link rel="preconnect" href="https://api.github.com" crossorigin />
+    <link rel="preconnect" href="https://avatars.githubusercontent.com" />
     <link
       rel="preload"
       href="/fonts/archivo-variable.woff2"
