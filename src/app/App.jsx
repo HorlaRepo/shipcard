@@ -9,6 +9,7 @@ import {
   howItWorks,
   navigation,
   pricing,
+  proofCard,
   site,
   skipLink,
   waitlist,
@@ -27,7 +28,7 @@ export default function App() {
       <SkipLink label={skipLink.label} targetId={site.mainId} />
       <Header siteName={site.name} homeHref={`#${site.topId}`} navigation={navigation} />
       <main id={site.mainId}>
-        <Hero content={hero} />
+        <Hero content={hero} demoContent={proofCard} />
         <HowItWorks content={howItWorks} />
         <Features content={features} />
         <Pricing content={pricing} />

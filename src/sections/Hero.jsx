@@ -1,4 +1,5 @@
 import Container from '../components/ui/Container.jsx';
+import ProofCardDemo from '../features/proof-card/ProofCardDemo.jsx';
 import styles from './Hero.module.css';
 
 /**
@@ -11,11 +12,13 @@ import styles from './Hero.module.css';
 
 /**
  * The opening of the page: the promise as the page's only h1, then the live
- * demo, passed in as children so this section stays layout only.
+ * demo that proves it.
  *
- * @param {{ content: HeroContent, children?: import('react').ReactNode }} props
+ * @param {object} props
+ * @param {HeroContent} props.content
+ * @param {import('../features/proof-card/ProofCardDemo.jsx').ProofCardContent} props.demoContent
  */
-export default function Hero({ content, children }) {
+export default function Hero({ content, demoContent }) {
   const titleId = `${content.id}-title`;
 
   return (
@@ -28,7 +31,7 @@ export default function Hero({ content, children }) {
           </span>
         </h1>
         <p className={styles.lead}>{content.lead}</p>
-        {children}
+        <ProofCardDemo content={demoContent} />
       </Container>
     </section>
   );
