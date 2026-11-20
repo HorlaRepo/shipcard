@@ -54,7 +54,7 @@ One ground, one surface, one ink, one accent. Colour never carries meaning alone
 
 - **Hi-vis yellow** (`--color-accent`, `#FFD500` in both themes). Fills only: the primary button, the highlighter stroke under two words of the headline, the recommended pricing tier's header, the selected state of the billing toggle. Text on it is always **Label ink** (`--color-on-accent`, `#15140F`).
 
-**The One Marker Rule.** Yellow marks at most one thing per screenful, the thing the visitor should act on. If two yellow fills are visible at once and neither is a selected state, one of them is wrong.
+**The One Marker Rule.** Yellow marks the claim once and the action once. The highlighter stroke in the headline is its only use on something that is not a control; beyond that, at most one yellow action is visible per screenful: the thing the visitor should do next. If two yellow actions are visible at once and neither is a selected state, one of them is wrong. (Amended in Phase 3, decision log L-24.)
 
 **The No Yellow Text Rule.** In the light theme yellow is never text, an icon or a hairline: it measures 1.2:1 on the ground. Because of that, a yellow fill in the light theme always carries a 1px ink edge (`--color-accent-edge`) so its boundary does not depend on the fill.
 
