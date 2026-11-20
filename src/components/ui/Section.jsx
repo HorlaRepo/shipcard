@@ -27,7 +27,7 @@ export default function Section({ id, title, lead, layout = 'split', children })
             <h2 id={titleId} className={styles.title}>
               {title}
             </h2>
-            {lead !== undefined && <p className={styles.lead}>{lead}</p>}
+            {lead === undefined ? null : <p className={styles.lead}>{lead}</p>}
           </header>
           <div className={styles.content}>{children}</div>
         </div>
